@@ -1,2 +1,3 @@
 #!/bin/bash
-geth --datadir "~/POA/private" attach ipc:/home/alper/POA/private/geth.ipc console
+DATADIR="/Users/alper";
+geth --datadir "~/POA/private" attach ipc:$DATADIR/POA/private/geth.ipc console
