@@ -1,3 +1,3 @@
 #!/bin/bash
 DATADIR="/Users/alper";
-geth --datadir "~/POA/private" attach ipc:$DATADIR/POA/private/geth.ipc console
+geth --datadir "~/ebloc_POA/private" attach ipc:$DATADIR/ebloc_POA/private/geth.ipc console

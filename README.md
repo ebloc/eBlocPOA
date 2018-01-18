@@ -2,13 +2,13 @@
 
 `Geth` version should be greater or equal than 1.7.3.
 
-Please update `DATADIR` variable on client.sh and server.sh as your path for POA.
+Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for ebloc_POA directory.
 
 
 ## Initializing
 
 ```
-geth --datadir ~/POA/private init custom.json
+geth --datadir ~/ebloc_POA/private init custom.json
 ```
 
 ## Server run:
