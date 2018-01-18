@@ -1,5 +1,10 @@
 # POA
 
+`Geth` version should be greater or equal than 1.7.3.
+
+Please update `DATADIR` variable on client.sh and server.sh as your path for POA.
+
+
 ## Initializing
 
 ```
