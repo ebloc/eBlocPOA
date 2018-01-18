@@ -23,7 +23,7 @@ sudo bash server.sh
 sudo bash client.sh
 ```
 
-### Geth Console:
+Geth Console:
 
 ```
 Welcome to the Geth JavaScript console!
