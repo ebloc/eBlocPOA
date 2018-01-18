@@ -1,4 +1,4 @@
-# POA
+# ebloc_POA
 
 `Geth` version should be greater or equal than 1.7.3.
 
