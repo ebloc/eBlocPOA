@@ -4,6 +4,11 @@
 
 Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for ebloc_POA directory.
 
+## Downloading 
+
+```
+git clone https://github.com/avatar-lavventura/ebloc_POA.git && cd ebloc_POA
+```
 
 ## Initializing
 
