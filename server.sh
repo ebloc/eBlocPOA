@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATADIR="/Users/alper";
+DATADIR="$HOME";
 sudo killall geth
 nohup geth --datadir $DATADIR/ebloc_POA/private --rpcaddr 127.0.0.1 --rpc --rpcport 8545 --rpccorsdomain="*" --networkid 23422 --rpcapi eth,net,web3,personal &
 
