@@ -2,7 +2,7 @@
 
 DATADIR="$HOME";
 sudo killall geth
-nohup geth --datadir $DATADIR/ebloc_POA/private --rpcaddr 127.0.0.1 --rpc --rpcport 8545 --rpccorsdomain="*" --networkid 23422 --rpcapi eth,net,web3,personal &
+nohup geth --datadir $DATADIR/ebloc_POA/private --port 3000 --rpcaddr 127.0.0.1 --rpc --rpcport 8545 --rpccorsdomain="*" --networkid 23422 --rpcapi eth,net,web3,personal &
 
 sleep 5
 
