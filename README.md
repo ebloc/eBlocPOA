@@ -1,6 +1,11 @@
 # ebloc_POA
 
-`Geth` version should be greater or equal than 1.7.3.
+`Geth` version should be greater or equal than `1.7.3`.
+
+```
+$ geth version|grep "Version: 1"
+Version: 1.7.3-stable
+```
 
 Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for ebloc_POA directory.
 
