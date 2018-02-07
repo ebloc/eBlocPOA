@@ -64,10 +64,14 @@ eblocPath="$PWD" && echo $eblocPath
 ### Create your Ethereum Account
 
 ```
-sudo geth --datadir="$eblocPath" account new
+[~] geth --datadir="$eblocPath" account new
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Passphrase:
+Repeat passphrase:
+Address: {744ab3697b01015776f9578a57b081d2afdc5462}
 ```
 
-Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account.
+Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
 
 ### Initializing
 
