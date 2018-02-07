@@ -1,10 +1,8 @@
 # **How to connect into Private Ethereum Blockchain (eBlocPOA)**
 
-## **Geth**
+## **Preinstallations**
 
-### **Preinstallations**
-
-#### **Installation Instructions for Mac**
+### **Installation Instructions for Mac**
 
 ```bash
 git clone https://github.com/ethereum/go-ethereum
@@ -12,9 +10,9 @@ brew install go
 cd go-ethereum
 make geth
 ```
-#### **Installation Instructions for Linux**
+### **Installation Instructions for Linux**
 
-**Go-installation**
+#### **Go-installation**
 ```bash
 tar -zxvf  go1.9.3.linux-amd64.tar.gz -C /usr/local/
 sudo tar -zxvf  go1.7.1.linux-amd64.tar.gz -C /usr/local/
@@ -22,7 +20,7 @@ export PATH=$PATH:/usr/local/go/bin
 cp  /usr/local/go/src/go /usr/bin/go
 ```
 
-##### **Geth Installation**
+#### **Geth Installation**
 
 ```bash
 sudo apt-get install git
@@ -55,7 +53,7 @@ Version: 1.7.3-stable
 
 ## **eBloc Setup on Linux and macOS**
 
-## Downloading 
+### Downloading 
 
 ```
 cd $HOME
@@ -66,20 +64,20 @@ sudo geth --datadir="$eblocPath" account new
 
 Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account.
 
-## Initializing
+### Initializing
 
 ```
 geth --datadir="$eblocPath/private" init custom.json
 ```
 Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for ebloc_POA directory.
 
-## Server run:
+### Server run:
 
 ```
 sudo bash server.sh
 ```
 
-## Client run (geth console):
+### Client run (geth console):
 
 ```
 sudo bash client.sh
