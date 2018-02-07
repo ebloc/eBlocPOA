@@ -60,8 +60,8 @@ Version: 1.7.3-stable
 ```
 git clone https://github.com/avatar-lavventura/ebloc_POA.git
 cd ebloc_POA
-ebloc_path="$PWD";
-sudo geth --datadir="$ebloc_path" account new
+eblocPath="$PWD" && echo $eblocPath
+sudo geth --datadir="$eblocPath" account new
 ```
 
 Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account.
@@ -71,7 +71,7 @@ Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for
 ## Initializing
 
 ```
-geth --datadir="$ebloc_path" init custom.json
+geth --datadir="$eblocPath" init custom.json
 ```
 
 ## Server run:
