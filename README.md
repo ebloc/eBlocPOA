@@ -80,7 +80,7 @@ geth --datadir="$eblocPath/private" init custom.json
 sudo bash server.sh
 ```
 
-## Client run:
+## Client run (geth console):
 
 ```
 sudo bash client.sh
