@@ -86,7 +86,7 @@ sudo bash server.sh
 sudo bash client.sh
 ```
 
-Geth Console: `peerCount` should be 1 or more, after running `net` command inside `geth.
+If you are successfully connected into `eblocPOA` network inside `geth` console; `peerCount` should return 1 or more, after running `net`.
 
 ```
 Welcome to the Geth JavaScript console!
