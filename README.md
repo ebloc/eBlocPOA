@@ -66,13 +66,12 @@ sudo geth --datadir="$eblocPath" account new
 
 Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account.
 
-Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for ebloc_POA directory.
-
 ## Initializing
 
 ```
 geth --datadir="$eblocPath/private" init custom.json
 ```
+Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for ebloc_POA directory.
 
 ## Server run:
 
