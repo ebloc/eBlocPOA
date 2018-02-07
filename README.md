@@ -44,8 +44,6 @@ geth
 ```
 Now when you just type `geth`, it should work.
 
--------------------
-
 `Geth` version should be greater or equal than `1.7.3`.
 
 ```
@@ -53,13 +51,17 @@ $ geth version|grep "Version: 1"
 Version: 1.7.3-stable
 ```
 
-Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for ebloc_POA directory.
+----------------------
+
+### **eBloc Setup on Linux and macOS**
 
 ## Downloading 
 
 ```
 git clone https://github.com/avatar-lavventura/ebloc_POA.git && cd ebloc_POA
 ```
+
+Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for ebloc_POA directory.
 
 ## Initializing
 
