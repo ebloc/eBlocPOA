@@ -4,7 +4,7 @@
 
 ### **Preinstallations**
 
-**Installation Instructions for Mac**
+#### **Installation Instructions for Mac**
 
 ```bash
 git clone https://github.com/ethereum/go-ethereum
@@ -12,7 +12,7 @@ brew install go
 cd go-ethereum
 make geth
 ```
-**Installation Instructions for Linux**
+#### **Installation Instructions for Linux**
 
 Go-installation:
 ```bash
@@ -22,7 +22,7 @@ export PATH=$PATH:/usr/local/go/bin
 cp  /usr/local/go/src/go /usr/bin/go
 ```
 
-**Geth Installation**
+##### **Geth Installation**
 
 ```bash
 sudo apt-get install git
