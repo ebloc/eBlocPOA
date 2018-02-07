@@ -59,6 +59,11 @@ Version: 1.7.3-stable
 cd $HOME
 git clone https://github.com/avatar-lavventura/ebloc_POA.git && cd ebloc_POA
 eblocPath="$PWD" && echo $eblocPath
+```
+
+### Create your Ethereum Account
+
+```
 sudo geth --datadir="$eblocPath" account new
 ```
 
