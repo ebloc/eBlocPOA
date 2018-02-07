@@ -66,7 +66,7 @@ Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for
 ## Initializing
 
 ```
-geth --datadir ~/ebloc_POA/private init custom.json
+geth --datadir private init custom.json
 ```
 
 ## Server run:
