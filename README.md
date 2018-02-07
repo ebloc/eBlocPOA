@@ -71,7 +71,7 @@ Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for
 ## Initializing
 
 ```
-geth --datadir="$eblocPath" init custom.json
+geth --datadir="$eblocPath/private" init custom.json
 ```
 
 ## Server run:
