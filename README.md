@@ -14,7 +14,7 @@ make geth
 ```
 **Installation Instructions for Linux**
 
-Go-installation (go-ethereum requires go version 1.7+.):
+Go-installation:
 ```bash
 tar -zxvf  go1.9.3.linux-amd64.tar.gz -C /usr/local/
 sudo tar -zxvf  go1.7.1.linux-amd64.tar.gz -C /usr/local/
