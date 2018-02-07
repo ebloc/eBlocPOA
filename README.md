@@ -86,7 +86,7 @@ sudo bash server.sh
 sudo bash client.sh
 ```
 
-Geth Console:
+Geth Console: `peerCount` should be 1 or more, after running `net` command inside `geth.
 
 ```
 Welcome to the Geth JavaScript console!
