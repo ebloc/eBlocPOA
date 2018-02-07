@@ -1,4 +1,50 @@
-# ebloc_POA
+# **How to connect into Private Ethereum Blockchain (eBlocPOA)**
+
+## **Geth**
+
+### **Preinstallations**
+
+**Installation Instructions for Mac**
+
+```bash
+git clone https://github.com/ethereum/go-ethereum
+brew install go
+cd go-ethereum
+make geth
+```
+**Installation Instructions for Linux**
+
+Go-installation (go-ethereum requires go version 1.7+.):
+```bash
+tar -zxvf  go1.9.3.linux-amd64.tar.gz -C /usr/local/
+sudo tar -zxvf  go1.7.1.linux-amd64.tar.gz -C /usr/local/
+export PATH=$PATH:/usr/local/go/bin
+cp  /usr/local/go/src/go /usr/bin/go
+```
+
+**Geth Installation**
+
+```bash
+sudo apt-get install git
+git clone https://github.com/ethereum/go-ethereum
+sudo apt-get install -y build-essential libgmp3-dev golang
+cd go-ethereum/
+git pull
+make geth
+```
+
+After go-ethereum is installed copy `geth` into` /usr/local/bin`:
+
+```bash
+[~] ls go-ethereum/build/bin
+geth
+[~] sudo cp build/bin/geth /usr/local/bin/
+[~] which geth
+/usr/local/bin/geth
+```
+Now when you just type `geth`, it should work.
+
+-------------------
 
 `Geth` version should be greater or equal than `1.7.3`.
 
