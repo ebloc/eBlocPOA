@@ -1,4 +1,4 @@
-# **How to connect into Private Ethereum Blockchain (eBlocPOA)**
+# **Connect into Private Ethereum Blockchain (eBlocPOA)**
 
 ## **Geth**
 
