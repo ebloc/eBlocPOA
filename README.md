@@ -58,6 +58,7 @@ Version: 1.7.3-stable
 ## Downloading 
 
 ```
+cd $HOME
 git clone https://github.com/avatar-lavventura/ebloc_POA.git
 cd ebloc_POA
 eblocPath="$PWD" && echo $eblocPath
