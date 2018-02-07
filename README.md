@@ -53,7 +53,7 @@ Version: 1.7.3-stable
 
 ----------------------
 
-### **eBloc Setup on Linux and macOS**
+## **eBloc Setup on Linux and macOS**
 
 ## Downloading 
 
