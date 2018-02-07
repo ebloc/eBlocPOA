@@ -26,7 +26,7 @@ cp  /usr/local/go/src/go /usr/bin/go
 
 ```bash
 sudo apt-get install git
-git clone https://github.com/ethereum/go-ethereum
+git clone https://github.com/ethereum/go-ethereum 
 sudo apt-get install -y build-essential libgmp3-dev golang
 cd go-ethereum/
 git pull
@@ -59,8 +59,7 @@ Version: 1.7.3-stable
 
 ```
 cd $HOME
-git clone https://github.com/avatar-lavventura/ebloc_POA.git
-cd ebloc_POA
+git clone https://github.com/avatar-lavventura/ebloc_POA.git && cd ebloc_POA
 eblocPath="$PWD" && echo $eblocPath
 sudo geth --datadir="$eblocPath" account new
 ```
