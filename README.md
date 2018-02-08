@@ -57,7 +57,8 @@ Version: 1.7.3-stable
 
 ```
 cd $HOME
-git clone https://github.com/avatar-lavventura/eblocPOA.git && cd eblocPOA
+git clone https://github.com/avatar-lavventura/eblocPOA.git && cd eblocPOA 
+eblocPath="$PWD"
 ```
 
 ### Create your Ethereum Account
