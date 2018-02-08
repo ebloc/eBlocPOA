@@ -78,19 +78,6 @@ Your new account is locked with a password. Please give a password. Do not forge
 bash initialize.sh
 ```
 
-```
-eblocPath="$PWD" && echo $eblocPath
-geth --datadir="$eblocPath/private" init custom.json
-```
-
-Please also update `DATADIR` variable on `client.sh` and `server.sh` as your path for eblocPOA directory.
-
-```
-var=$(echo $eblocPath | sed 's/\//\\\//g')
-sed -i.bak "s/^\(DATADIR=\).*/\1\"$var\"/" server.sh && rm server.sh.bak
-sed -i.bak "s/^\(DATADIR=\).*/\1\"$var\"/" client.sh && rm client.sh.bak
-```
-
 ### Server run:
 
 ```
