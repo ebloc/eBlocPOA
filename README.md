@@ -58,7 +58,6 @@ Version: 1.7.3-stable
 ```
 cd $HOME
 git clone https://github.com/avatar-lavventura/eblocPOA.git && cd eblocPOA
-eblocPath="$PWD" && echo $eblocPath
 ```
 
 ### Create your Ethereum Account
@@ -76,9 +75,15 @@ Your new account is locked with a password. Please give a password. Do not forge
 ### Initializing
 
 ```
+bash initialize.sh
+```
+
+```
+eblocPath="$PWD" && echo $eblocPath
 geth --datadir="$eblocPath/private" init custom.json
 ```
-Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for eblocPOA directory.
+
+Please also update `DATADIR` variable on `client.sh` and `server.sh` as your path for eblocPOA directory.
 
 ```
 var=$(echo $eblocPath | sed 's/\//\\\//g')
