@@ -80,6 +80,12 @@ geth --datadir="$eblocPath/private" init custom.json
 ```
 Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for eblocPOA directory.
 
+```
+var=$(echo $eblocPath | sed 's/\//\\\//g')
+sed -i  "s/^\(DATADIR=\).*/\1$var/" server.sh && rm server.sh.bak
+sed -i  "s/^\(DATADIR=\).*/\1$var/" client.sh && rm client.sh.bak
+```
+
 ### Server run:
 
 ```
