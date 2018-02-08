@@ -82,8 +82,8 @@ Please update `DATADIR` variable on `client.sh` and `server.sh` as your path for
 
 ```
 var=$(echo $eblocPath | sed 's/\//\\\//g')
-sed -i  "s/^\(DATADIR=\).*/\1$var/" server.sh && rm server.sh.bak
-sed -i  "s/^\(DATADIR=\).*/\1$var/" client.sh && rm client.sh.bak
+sed -i.bak "s/^\(DATADIR=\).*/\1$var/" server.sh && rm server.sh.bak
+sed -i.bak  "s/^\(DATADIR=\).*/\1$var/" client.sh && rm client.sh.bak
 ```
 
 ### Server run:
