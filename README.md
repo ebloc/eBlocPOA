@@ -109,3 +109,5 @@ instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
   getVersion: function(callback)
 }
 ```
+
+If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015 please follow: https://github.com/ebloc/eBloc/issues/2
