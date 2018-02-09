@@ -14,9 +14,9 @@ make geth
 
 #### **Go-installation (https://github.com/golang/go/wiki/Ubuntu)**
 ```bash
-$ sudo add-apt-repository ppa:gophers/archive
-$ sudo apt-get update
-$ sudo apt-get install golang-1.9-go
+sudo add-apt-repository ppa:gophers/archive
+sudo apt-get update
+sudo apt-get install golang-1.9-go
 ```
 
 Put this line: `export PATH=$PATH:/usr/lib/go-1.9/bin`  into `.profile` file.
@@ -94,7 +94,7 @@ sudo bash client.sh
 
 If you are successfully connected into `eblocPOA` network inside `geth` console; `peerCount` should return 1 or more, after running `net`.
 
-```bash
+```
 Welcome to the Geth JavaScript console!
 
 instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
