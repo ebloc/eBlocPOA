@@ -19,7 +19,7 @@ $ sudo apt-get update
 $ sudo apt-get install golang-1.9-go
 ```
 
-Put this line( `export PATH=$PATH:/usr/lib/go-1.9/bin` ) into `.profile` file.
+Put this line: `export PATH=$PATH:/usr/lib/go-1.9/bin`  into `.profile` file.
 
 #### **Geth Installation**
 
