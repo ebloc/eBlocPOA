@@ -45,7 +45,7 @@ Now when you just type `geth`, it should work.
 
 `Geth` version should be greater or equal than `1.7.3`.
 
-```
+```bash
 $ geth version|grep "Version: 1"
 Version: 1.7.3-stable
 ```
@@ -56,7 +56,7 @@ Version: 1.7.3-stable
 
 ### Downloading 
 
-```
+```bash
 cd $HOME
 git clone https://github.com/avatar-lavventura/eblocPOA.git && cd eblocPOA 
 eblocPath="$PWD"
@@ -64,7 +64,7 @@ eblocPath="$PWD"
 
 ### Create your Ethereum Account
 
-```
+```bash
 [~] geth --datadir="$eblocPath" account new
 Your new account is locked with a password. Please give a password. Do not forget this password.
 Passphrase:
@@ -76,25 +76,25 @@ Your new account is locked with a password. Please give a password. Do not forge
 
 ### Initializing
 
-```
+```bash
 bash initialize.sh
 ```
 
 ### Server run:
 
-```
+```bash
 sudo bash server.sh
 ```
 
 ### Client run (geth console):
 
-```
+```bash
 sudo bash client.sh
 ```
 
 If you are successfully connected into `eblocPOA` network inside `geth` console; `peerCount` should return 1 or more, after running `net`.
 
-```
+```bash
 Welcome to the Geth JavaScript console!
 
 instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
