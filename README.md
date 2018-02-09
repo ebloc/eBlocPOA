@@ -12,13 +12,14 @@ make geth
 ```
 ### **Installation Instructions for Linux**
 
-#### **Go-installation**
+#### **Go-installation (https://github.com/golang/go/wiki/Ubuntu)**
 ```bash
-tar -zxvf  go1.9.3.linux-amd64.tar.gz -C /usr/local/
-sudo tar -zxvf  go1.7.1.linux-amd64.tar.gz -C /usr/local/
-export PATH=$PATH:/usr/local/go/bin
-cp  /usr/local/go/src/go /usr/bin/go
+$ sudo add-apt-repository ppa:gophers/archive
+$ sudo apt-get update
+$ sudo apt-get install golang-1.9-go
 ```
+
+Put this line: `export PATH=$PATH:/usr/lib/go-1.9/bin`  into `.profile` file.
 
 #### **Geth Installation**
 
@@ -109,3 +110,7 @@ instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
   getVersion: function(callback)
 }
 ```
+
+### **How to attach to eBloc Network Status**
+
+If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015 please follow: https://github.com/ebloc/eBloc/issues/2
