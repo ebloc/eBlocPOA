@@ -12,7 +12,7 @@ make geth
 ```
 ### **Installation Instructions for Linux**
 
-#### **Go-installation**
+#### **Go-installation (https://github.com/golang/go/wiki/Ubuntu)**
 ```bash
 $ sudo add-apt-repository ppa:gophers/archive
 $ sudo apt-get update
