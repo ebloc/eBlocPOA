@@ -89,7 +89,7 @@ sudo bash server.sh
 ### Client run (geth console):
 
 ```bash
-sudo bash client.sh
+bash client.sh
 ```
 
 If you are successfully connected into `eblocPOA` network inside `geth` console; `peerCount` should return 1 or more, after running `net`.
