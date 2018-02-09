@@ -43,7 +43,7 @@ geth
 ```
 Now when you just type `geth`, it should work.
 
-`Geth` version should be greater or equal than `1.7.3`.
+Please note that `Geth` version should be greater or equal than `1.7.3`.
 
 ```bash
 $ geth version|grep "Version: 1"
