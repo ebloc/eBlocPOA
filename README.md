@@ -32,7 +32,7 @@ git pull
 make geth
 ```
 
-After go-ethereum is installed copy `geth` into` /usr/local/bin`:
+After `go-ethereum` is installed, copy `geth` located under `go-ethereum/build/bin` into` /usr/local/bin`:
 
 ```bash
 $ ls go-ethereum/build/bin
