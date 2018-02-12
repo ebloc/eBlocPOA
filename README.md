@@ -89,6 +89,8 @@ bash initialize.sh
 sudo bash server.sh
 ```
 
+If you want to kill your server please do: `sudo killall geth`
+
 ### Client run (geth console)
 
 ```bash
