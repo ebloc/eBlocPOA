@@ -32,7 +32,7 @@ git pull
 make geth
 ```
 
-After go-ethereum is installed copy `geth` into` /usr/local/bin`:
+After `go-ethereum` is installed, copy `geth` located under `go-ethereum/build/bin` into` /usr/local/bin`:
 
 ```bash
 $ ls go-ethereum/build/bin
@@ -114,12 +114,47 @@ instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
   getPeerCount: function(callback),
   getVersion: function(callback)
 }
+
+# How to check list of accounts
 > eth.accounts
-["0x744ab3697b01015776f9578a57b081d2afdc5462"]
-> account=eth.accounts[0]
+["0x3b027ff2d229dd1c7918910dee32048f5f65b70d", "0x472eea7de6a43b6e55d8be84d5d29879df42a46c"]
+
+> sender=eth.accounts[0]
 "0x3b027ff2d229dd1c7918910dee32048f5f65b70d"
-> web3.fromWei(eth.getBalance(account))
+
+> reciever=eth.accounts[1]
+"0x472eea7de6a43b6e55d8be84d5d29879df42a46c"
+
+# How to check your balance
+> web3.fromWei(eth.getBalance(sender))
 100
+
+# How to unlock your Ethereum account
+> personal.unlockAccount(sender)
+Unlock account 0x3b027ff2d229dd1c7918910dee32048f5f65b70d
+Passphrase:
+true
+
+# How to send ether to another account
+> eth.sendTransaction({from:sender, to:reciever, value: web3.toWei(0.00001, "ether")})
+"0xf92c11b6bd80ab12d5d63f7c6909ac7fc45a6b8052c29256dd28bd97b6375f1b"  #This is your transaction receipt.
+
+# How to get receipt of your transaction
+> eth.getTransactionReceipt("0xf92c11b6bd80ab12d5d63f7c6909ac7fc45a6b8052c29256dd28bd97b6375f1b")
+{
+  blockHash: "0x17325837f38ff84c0337db87f13b9496f546645366ebd94c7e78c6a4c0cb5a87",
+  blockNumber: 111178,
+  contractAddress: null,
+  cumulativeGasUsed: 21000,
+  from: "0x3b027ff2d229dd1c7918910dee32048f5f65b70d",
+  gasUsed: 21000,
+  logs: [],
+  logsBloom: "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  status: "0x1",
+  to: "0x472eea7de6a43b6e55d8be84d5d29879df42a46c",
+  transactionHash: "0xf92c11b6bd80ab12d5d63f7c6909ac7fc45a6b8052c29256dd28bd97b6375f1b",
+  transactionIndex: 0
+}
 ```
 
 -----------------
@@ -148,14 +183,3 @@ If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015
 
 - [Managing your accounts](https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts)
 - [Sending Ether on geth-client](https://github.com/ethereum/go-ethereum/wiki/Sending-ether)
-
-Example:
-
-```
-> sender=eth.accounts[0]
-"0x4e4a0750350796164d8defc442a712b7557bf282"
-> receiever="0xf81cD8DC22f06b84B610F4b6B7A388F63e635bF4"
-"0xf81cD8DC22f06b84B610F4b6B7A388F63e635bF4"
-> eth.sendTransaction({from:sender, to:receiever, value: web3.toWei(1, "ether")})
-> web3.fromWei(eth.getBalance(sender))
-```
