@@ -127,6 +127,10 @@ Now if the read warning message is removed, your eBlocWallet is connected to you
 
 <img width="1100" alt="screen shot 2018-02-12 at 13 29 13" src="https://user-images.githubusercontent.com/18537398/36092854-dfb53d80-0ff9-11e8-9dc5-b2e788d01bd5.png">
 
+Later you should see your account information (balance, account, etc).
+
+
+
 ### **Some helpful links**
 
 - [Sending Ether on geth-client](https://github.com/ethereum/go-ethereum/wiki/Sending-ether)
