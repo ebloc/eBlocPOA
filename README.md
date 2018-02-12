@@ -50,6 +50,13 @@ $ geth version|grep "Version: 1"
 Version: 1.7.3-stable
 ```
 
+Please note that to update `geth`, please enter into `go-ethereum` directory and do:
+
+```
+git pull
+make geth
+```
+
 ----------------------
 
 ## **eBloc Setup on Linux and macOS**
