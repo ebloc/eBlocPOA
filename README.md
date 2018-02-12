@@ -25,8 +25,8 @@ Put this line: `export PATH=$PATH:/usr/lib/go-1.9/bin`  into `.profile` file.
 
 ```bash
 sudo apt-get install git
-git clone https://github.com/ethereum/go-ethereum 
 sudo apt-get install -y build-essential libgmp3-dev golang
+git clone https://github.com/ethereum/go-ethereum 
 cd go-ethereum/
 git pull
 make geth
@@ -58,7 +58,7 @@ Version: 1.7.3-stable
 
 ```bash
 cd $HOME
-git clone https://github.com/avatar-lavventura/eblocPOA.git && cd eblocPOA 
+git clone https://github.com/avatar-lavventura/eblocPOA.git
 ```
 
 ### Create your Ethereum Account
