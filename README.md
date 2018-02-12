@@ -115,11 +115,18 @@ instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
   getVersion: function(callback)
 }
 > eth.accounts
-["0x744ab3697b01015776f9578a57b081d2afdc5462"]
-> account=eth.accounts[0]
+["0x3b027ff2d229dd1c7918910dee32048f5f65b70d", "0x472eea7de6a43b6e55d8be84d5d29879df42a46c"]
+> sender=eth.accounts[0]
 "0x3b027ff2d229dd1c7918910dee32048f5f65b70d"
-> web3.fromWei(eth.getBalance(account))
+> reciever=eth.accounts[1]
+"0x472eea7de6a43b6e55d8be84d5d29879df42a46c"
+> web3.fromWei(eth.getBalance(sender))
 100
+> personal.unlockAccount(sender)
+Unlock account 0x3b027ff2d229dd1c7918910dee32048f5f65b70d
+Passphrase:
+true
+> eth.sendTransaction({from:sender, to:reciever, value: web3.toWei(0.00001, "ether")})
 ```
 
 -----------------
@@ -148,14 +155,3 @@ If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015
 
 - [Managing your accounts](https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts)
 - [Sending Ether on geth-client](https://github.com/ethereum/go-ethereum/wiki/Sending-ether)
-
-Example:
-
-```
-> sender=eth.accounts[0]
-"0x4e4a0750350796164d8defc442a712b7557bf282"
-> receiever="0xf81cD8DC22f06b84B610F4b6B7A388F63e635bF4"
-"0xf81cD8DC22f06b84B610F4b6B7A388F63e635bF4"
-> eth.sendTransaction({from:sender, to:receiever, value: web3.toWei(1, "ether")})
-> web3.fromWei(eth.getBalance(sender))
-```
