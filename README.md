@@ -59,12 +59,14 @@ Version: 1.7.3-stable
 ```bash
 cd $HOME
 git clone https://github.com/avatar-lavventura/eblocPOA.git && cd eblocPOA 
-eblocPath="$PWD"
 ```
 
 ### Create your Ethereum Account
 
+
 ```bash
+cd eblocPOA
+eblocPath="$PWD"
 [~] geth --datadir="$eblocPath" account new
 Your new account is locked with a password. Please give a password. Do not forget this password.
 Passphrase:
@@ -74,7 +76,7 @@ Address: {744ab3697b01015776f9578a57b081d2afdc5462}
 
 Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
 
-### Initializing
+### Initializing (Do it only once. You do not need to do it again!)
 
 ```bash
 bash initialize.sh
