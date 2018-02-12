@@ -59,12 +59,14 @@ Version: 1.7.3-stable
 ```bash
 cd $HOME
 git clone https://github.com/avatar-lavventura/eblocPOA.git && cd eblocPOA 
-eblocPath="$PWD"
 ```
 
 ### Create your Ethereum Account
 
+
 ```bash
+cd eblocPOA
+eblocPath="$PWD"
 [~] geth --datadir="$eblocPath" account new
 Your new account is locked with a password. Please give a password. Do not forget this password.
 Passphrase:
@@ -74,19 +76,20 @@ Address: {744ab3697b01015776f9578a57b081d2afdc5462}
 
 Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
 
-### Initializing
+### Initialises a new genesis block and definition for the network 
+**!!!Do `bash initialize.sh` only once. You do not need to do it again!!!**
 
 ```bash
 bash initialize.sh
 ```
 
-### Server run:
+### Server run (Always run with `sudo`)
 
 ```bash
 sudo bash server.sh
 ```
 
-### Client run (geth console):
+### Client run (geth console)
 
 ```bash
 bash client.sh
@@ -109,6 +112,12 @@ instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
   getPeerCount: function(callback),
   getVersion: function(callback)
 }
+> eth.accounts
+["0x744ab3697b01015776f9578a57b081d2afdc5462"]
+> account=eth.accounts[0]
+"0x3b027ff2d229dd1c7918910dee32048f5f65b70d"
+> web3.fromWei(eth.getBalance(account))
+100
 ```
 
 -----------------
