@@ -114,6 +114,10 @@ instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
 }
 > eth.accounts
 ["0x744ab3697b01015776f9578a57b081d2afdc5462"]
+> account=eth.accounts[0]
+"0x3b027ff2d229dd1c7918910dee32048f5f65b70d"
+> web3.fromWei(eth.getBalance(account))
+100
 ```
 
 -----------------
