@@ -115,13 +115,16 @@ instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
 
 If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015 please follow: https://github.com/ebloc/eBloc/issues/2
 
-### **Create your Ethereum Account using eBlocWallet**
+### **Access your Ethereum Account using eBlocWallet**
 
 In order to use eBlocWallet, first `sudo bash server.sh` should be executed, hence `geth-server` should run on the background. Open (http://ebloc.cmpe.boun.edu.tr:3002). Then on the right top corner press:
 
 `(),` => `Add Custom Node` => `Save & Use Custom Node`. 
 
-Now if the read warning message is removed, your eBlocWallet is connected to your `geth-server` and you can create your Etherem address under `Generate Wallet`. 
+Now if the read warning message is removed, your eBlocWallet is connected to your `geth-server`.
+
+`Send Ether and Tokes` => Select `Keystore File (UTC / JSON)`=>`SELECT WALLET FILE` (your wallet is located under eblocPOA/keystore`)
+
 
 ### **Some helpful links**
 
