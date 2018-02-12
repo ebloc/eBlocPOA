@@ -119,6 +119,10 @@ If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015
 
 In order to use eBlocWallet, first `sudo bash server.sh` should be executed, hence `geth-server` should run on the background.
 
-Open(http://ebloc.cmpe.boun.edu.tr:3002). Than on the right top corner press `(),` => `Add Custom Node` => `Save & Use Custom Node`. Now if the read warning message is removed, your eBlocWallet is connected to your `geth-server``.
+Open(http://ebloc.cmpe.boun.edu.tr:3002). Than on the right top corner press:
+
+`(),` => `Add Custom Node` => `Save & Use Custom Node`. 
+
+Now if the read warning message is removed, your eBlocWallet is connected to your `geth-server``.
 
 Now, you can create your Etherem address under `Generate Wallet`. 
