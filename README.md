@@ -35,10 +35,10 @@ make geth
 After go-ethereum is installed copy `geth` into` /usr/local/bin`:
 
 ```bash
-[~] ls go-ethereum/build/bin
+$ ls go-ethereum/build/bin
 geth
-[~] sudo cp build/bin/geth /usr/local/bin/
-[~] which geth
+$ sudo cp build/bin/geth /usr/local/bin/
+$ which geth
 /usr/local/bin/geth
 ```
 Now when you just type `geth`, it should work.
@@ -67,7 +67,7 @@ git clone https://github.com/avatar-lavventura/eblocPOA.git
 ```bash
 cd eblocPOA
 eblocPath="$PWD"
-[~] geth --datadir="$eblocPath" account new
+$ geth --datadir="$eblocPath" account new
 Your new account is locked with a password. Please give a password. Do not forget this password.
 Passphrase:
 Repeat passphrase:
@@ -157,4 +157,3 @@ Example:
 > eth.sendTransaction({from:sender, to:receiever, value: web3.toWei(1, "ether")})
 > web3.fromWei(eth.getBalance(sender))
 ```
-
