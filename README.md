@@ -125,6 +125,8 @@ Now if the read warning message is removed, your eBlocWallet is connected to you
 
 `Send Ether and Tokes` => Select `Keystore File (UTC / JSON)`=>`SELECT WALLET FILE` (your wallet is located under `eblocPOA/keystore`) => `Unlock`
 
+![alt text](https://drive.google.com/open?id=1ob6czq-I2kxBp6luw9eVr1BbRHeMGGBG)
+
 
 ### **Some helpful links**
 
