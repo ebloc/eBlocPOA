@@ -111,9 +111,7 @@ instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
 }
 ```
 
-### **How to attach to eBloc Network Status**
-
-If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015 please follow: https://github.com/ebloc/eBloc/issues/2
+-----------------
 
 ### **Access your Ethereum Account using eBlocWallet**
 
@@ -130,6 +128,10 @@ Now if the read warning message is removed, your eBlocWallet is connected to you
 Later you should see your account information (balance, account, etc).
 
 <img width="1088" alt="screen shot 2018-02-12 at 13 38 48" src="https://user-images.githubusercontent.com/18537398/36092942-2fa6c0ac-0ffa-11e8-9664-4f9df315f407.png">
+
+### **How to attach to eBloc Network Status**
+
+If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015 please follow: https://github.com/ebloc/eBloc/issues/2
 
 ### **Some helpful links**
 
