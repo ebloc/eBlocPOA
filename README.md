@@ -135,9 +135,14 @@ Later you should see your account information (balance, account, etc).
 
 - [Sending Ether on geth-client](https://github.com/ethereum/go-ethereum/wiki/Sending-ether)
 
+Example:
 ```
-eth.sendTransaction({from:"0x06..", to:"0x3b0..", value: web3.toWei(10, "ether")});
-web3.fromWei(eth.getBalance("0xf8..."));
+> sender=eth.accounts[0]
+"0x4e4a0750350796164d8defc442a712b7557bf282"
+> receiever="0xf81cD8DC22f06b84B610F4b6B7A388F63e635bF4"
+"0xf81cD8DC22f06b84B610F4b6B7A388F63e635bF4"
+> eth.sendTransaction({from:sender, to:receiever, value: web3.toWei(1, "ether")});
+> web3.fromWei(eth.getBalance(sender));
 ```
 
 - [Managing your accounts](https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts)
