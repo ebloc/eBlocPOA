@@ -76,7 +76,7 @@ Address: {744ab3697b01015776f9578a57b081d2afdc5462}
 
 Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
 
-### Initializing (Do it only once. You do not need to do it again!)
+### Initialises a new genesis block and definition for the network (Do it only once. You do not need to do it again!)
 
 ```bash
 bash initialize.sh
@@ -111,6 +111,8 @@ instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
   getPeerCount: function(callback),
   getVersion: function(callback)
 }
+> eth.accounts
+["0x744ab3697b01015776f9578a57b081d2afdc5462"]
 ```
 
 -----------------
