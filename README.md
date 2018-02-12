@@ -124,4 +124,4 @@ In order to use eBlocWallet, first `sudo bash server.sh` should be executed, hen
 Now if the read warning message is removed, your eBlocWallet is connected to your `geth-server` and you can create your Etherem address under `Generate Wallet`. 
 
 ### **Some helpful links**
-- Sending Ether(https://github.com/ethereum/go-ethereum/wiki/Sending-ether)
+- [Sending Ether](https://github.com/ethereum/go-ethereum/wiki/Sending-ether)
