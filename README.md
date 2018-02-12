@@ -117,7 +117,7 @@ If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015
 
 ### **Create your Ethereum Account using eBlocWallet**
 
-In order to use eBlocWallet, first `sudo bash server.sh` should be executed, hence `geth-server` should run on the background. Open(http://ebloc.cmpe.boun.edu.tr:3002). Than on the right top corner press:
+In order to use eBlocWallet, first `sudo bash server.sh` should be executed, hence `geth-server` should run on the background. Open (http://ebloc.cmpe.boun.edu.tr:3002). Then on the right top corner press:
 
 `(),` => `Add Custom Node` => `Save & Use Custom Node`. 
 
