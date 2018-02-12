@@ -123,7 +123,7 @@ In order to use eBlocWallet, first `sudo bash server.sh` should be executed, hen
 
 Now if the read warning message is removed, your eBlocWallet is connected to your `geth-server`.
 
-`Send Ether and Tokes` => Select `Keystore File (UTC / JSON)`=>`SELECT WALLET FILE` (your wallet is located under eblocPOA/keystore`)
+`Send Ether and Tokes` => Select `Keystore File (UTC / JSON)`=>`SELECT WALLET FILE` (your wallet is located under `eblocPOA/keystore`)
 
 
 ### **Some helpful links**
