@@ -77,7 +77,7 @@ Address: {744ab3697b01015776f9578a57b081d2afdc5462}
 Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
 
 ### Initialises a new genesis block and definition for the network 
-**(!!!Do it only once. You do not need to do it again!!!)**
+**!!!Do it only once. You do not need to do it again!!!**
 
 ```bash
 bash initialize.sh
