@@ -139,7 +139,7 @@ true
 > eth.sendTransaction({from:sender, to:reciever, value: web3.toWei(0.00001, "ether")})
 "0xf92c11b6bd80ab12d5d63f7c6909ac7fc45a6b8052c29256dd28bd97b6375f1b"  #This is your transaction receipt.
 
-# How to check your transaction is accepted
+# How to get receipt of your transaction
 > eth.getTransactionReceipt("0xf92c11b6bd80ab12d5d63f7c6909ac7fc45a6b8052c29256dd28bd97b6375f1b")
 {
   blockHash: "0x17325837f38ff84c0337db87f13b9496f546645366ebd94c7e78c6a4c0cb5a87",
