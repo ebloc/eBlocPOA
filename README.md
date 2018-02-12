@@ -129,7 +129,7 @@ Now if the read warning message is removed, your eBlocWallet is connected to you
 
 Later you should see your account information (balance, account, etc).
 
-
+<img width="1088" alt="screen shot 2018-02-12 at 13 38 48" src="https://user-images.githubusercontent.com/18537398/36092942-2fa6c0ac-0ffa-11e8-9664-4f9df315f407.png">
 
 ### **Some helpful links**
 
