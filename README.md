@@ -13,6 +13,7 @@ make geth
 ### **Installation Instructions for Linux**
 
 #### **Go-installation (https://github.com/golang/go/wiki/Ubuntu)**
+
 ```bash
 sudo add-apt-repository ppa:gophers/archive
 sudo apt-get update
@@ -64,7 +65,7 @@ make geth
 ### Downloading 
 
 ```bash
-cd $HOME
+cd $HOME 
 git clone https://github.com/avatar-lavventura/eblocPOA.git
 ```
 
@@ -84,7 +85,7 @@ Address: {744ab3697b01015776f9578a57b081d2afdc5462}
 Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
 
 ### Initialises a new genesis block and definition for the network 
-**!!!Do `bash initialize.sh` only once. You do not need to do it again!!!**
+:warning: Do `bash initialize.sh` only once. You do not need to do it again :warning:
 
 ```bash
 bash initialize.sh
