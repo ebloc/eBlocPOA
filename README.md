@@ -7,6 +7,7 @@
 ```bash
 brew install go
 git clone https://github.com/ethereum/go-ethereum
+
 cd go-ethereum
 make geth
 ```
@@ -28,6 +29,7 @@ sudo apt-get install golang-1.9-go
 sudo apt-get install git
 sudo apt-get install -y build-essential libgmp3-dev golang
 git clone https://github.com/ethereum/go-ethereum 
+
 cd go-ethereum/
 git pull
 make geth
