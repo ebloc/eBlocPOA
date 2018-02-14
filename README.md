@@ -156,13 +156,7 @@ If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015
 
 ### **Helpful command on geth client**
 
-- net
-- eth.accounts
-- sender=eth.accounts[0]
-- reciever=eth.accounts[1]
-- web3.fromWei(eth.getBalance(sender))
-- personal.unlockAccount(sender)
-- eth.sendTransaction({from:sender, to:reciever, value: web3.toWei(0.00001, "ether")})
+Please try following commands on your `geth-client console.
 
 ```
 Welcome to the Geth JavaScript console!
