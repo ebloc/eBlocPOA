@@ -187,7 +187,7 @@ Later you should see your account information (balance, account, etc).
 
 ### **Helpful command on geth client**
 
-Please try following commands on your `geth-client console.
+Please try following commands on your `geth-client` console.
 
 ```
 Welcome to the Geth JavaScript console!
