@@ -86,7 +86,7 @@ cd eblocPOA
 git clone https://github.com/cubedro/eth-net-intelligence-api
 
 cd eth-net-intelligence-api
-npm -g install
+npm install
 ```
 
 ### Initialises a new genesis block and definition for the network 
