@@ -73,8 +73,8 @@ git clone https://github.com/avatar-lavventura/eblocPOA.git
 
 
 ```bash
-cd eblocPOA
-eblocPath="$PWD"
+$ cd eblocPOA
+$ eblocPath="$PWD"
 $ geth --datadir="$eblocPath" account new
 Your new account is locked with a password. Please give a password. Do not forget this password.
 Passphrase:
@@ -83,6 +83,13 @@ Address: {744ab3697b01015776f9578a57b081d2afdc5462}
 ```
 
 Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
+
+You should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
+
+```
+[~/eblocPOA]$ ls private/keystore
+UTC--2018-02-12T10-50-12.998304000Z--3b027ff2d229dd1c7918910dee32048f5f65b70d
+
 
 ### Initialises a new genesis block and definition for the network 
 :warning: Do `bash initialize.sh` only once. You do not need to do it again :warning:
