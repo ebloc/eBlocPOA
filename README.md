@@ -66,7 +66,7 @@ make geth
 
 ```bash
 cd $HOME 
-git clone https://github.com/avatar-lavventura/eblocPOA.git
+git clone https://github.com/ebloc/eblocPOA.git
 
 cd eblocPOA
 ```
