@@ -107,6 +107,7 @@ If you are successfully connected into `eblocPOA` network inside `geth` console;
 
 ### Create your Ethereum Account
 
+#### 1)
 
 ```bash
 $ cd eblocPOA
@@ -120,13 +121,30 @@ Address: {a0a50a64cac0744dea5287d1025b8ef28aeff36e}
 
 Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
 
-You should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
+You should see your `Keystore File (UTC / JSON)`under `keystore` directory. 
 
 ```
 [~/eblocPOA]$ ls keystore
 UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
 ```
 
+#### 2) 
+
+You can also create your Ethereum account inside your `geth-client`.
+
+```
+> personal.newAccount()
+Passphrase:
+Repeat passphrase:
+"0x7d334606c71417f944ff8ba5c09e3672066244f8"
+```
+
+Now you should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
+
+```
+[~/eblocPOA]$ ls private/keystore
+UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
+```
 -----------------
 
 ### **How to attach to eBloc Network Status**
