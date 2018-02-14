@@ -194,7 +194,7 @@ bash stats.sh
 
 - `sudo pm2 show app` should return some output starting with `"status            │ online"`.
 
-Now, you should see your node on http://ebloc.cmpe.boun.edu.tr:3015. 
+Now, you should see your node on http://ebloc.cmpe.boun.edu.tr:3015. If you successfully see your name, put this line bash stats.sh into last line of server.sh file.
 
 -----------------
 
