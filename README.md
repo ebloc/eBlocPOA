@@ -4,13 +4,27 @@
 
 ### **Installation Instructions for Mac**
 
+- From following link: https://nodejs.org/en/, download `9.5.0 Current`.
+
 ```bash
+sudo npm install npm pm2 -g
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share} ~/.npm
+
 brew install go
 git clone https://github.com/ethereum/go-ethereum
 cd go-ethereum
 make geth
 ```
 ### **Installation Instructions for Linux**
+
+#### Node.js and Node Package Manager(npm) installation
+
+```
+sudo apt-get install nodejs npm
+sudo npm install pm2 -g
+
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share} ~/.npm
+```
 
 #### **Go-installation (https://github.com/golang/go/wiki/Ubuntu)**
 
