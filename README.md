@@ -130,7 +130,7 @@ UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
 
 #### 2) 
 
-You can also create your Ethereum account inside your `geth-client`.
+You can also create your Ethereum account inside your `geth-client`. Here your `Keystore File` will be created with root permission, `eBlocWallet` will not able to access it.
 
 ```
 > personal.newAccount()
