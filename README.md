@@ -101,7 +101,68 @@ INFO [02-12|16:22:49] Imported new chain segment               blocks=1  
 bash client.sh
 ```
 
-If you are successfully connected into `eblocPOA` network inside `geth` console; `peerCount` should return 1 or more, after running `net`.
+If you are successfully connected into `eblocPOA` network inside `geth` console; `peerCount` should return 1 or more, after running `net` command.
+
+-----------------
+
+### Create your Ethereum Account
+
+
+```bash
+$ cd eblocPOA
+$ eblocPath="$PWD"
+$ geth --datadir="$eblocPath" account new
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Passphrase:
+Repeat passphrase:
+Address: {a0a50a64cac0744dea5287d1025b8ef28aeff36e}
+```
+
+Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
+
+You should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
+
+```
+[~/eblocPOA]$ ls keystore
+UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
+```
+
+-----------------
+
+### **Access your Ethereum Account using eBlocWallet**
+
+In order to use eBlocWallet, first `sudo bash server.sh` should be executed, hence `geth-server` should run on the background. Open (http://ebloc.cmpe.boun.edu.tr:3002). Then on the right top corner press:
+
+`(),` => `Add Custom Node` => `Save & Use Custom Node`. 
+
+Now if the read warning message is removed, your eBlocWallet is connected to your `geth-server`.
+
+`Send Ether and Tokes` => Select `Keystore File (UTC / JSON)`=>`SELECT WALLET FILE` (Your wallet is located under `eblocPOA/keystore` name starting with `UTC`) => `Unlock`
+
+<img width="1100" alt="screen shot 2018-02-12 at 13 29 13" src="https://user-images.githubusercontent.com/18537398/36092854-dfb53d80-0ff9-11e8-9dc5-b2e788d01bd5.png">
+
+Later you should see your account information (balance, account, etc).
+
+<img width="1088" alt="screen shot 2018-02-12 at 13 38 48" src="https://user-images.githubusercontent.com/18537398/36092942-2fa6c0ac-0ffa-11e8-9664-4f9df315f407.png">
+
+### **How to attach to eBloc Network Status**
+
+If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015 please follow: https://github.com/ebloc/eBloc/issues/2
+
+### **Some helpful links**
+
+- [Managing your accounts](https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts)
+- [Sending Ether on geth-client](https://github.com/ethereum/go-ethereum/wiki/Sending-ether)
+
+### **Helpful command on geth client**
+
+- net
+- eth.accounts
+- sender=eth.accounts[0]
+- reciever=eth.accounts[1]
+- web3.fromWei(eth.getBalance(sender))
+- personal.unlockAccount(sender)
+- eth.sendTransaction({from:sender, to:reciever, value: web3.toWei(0.00001, "ether")})
 
 ```
 Welcome to the Geth JavaScript console!
@@ -160,54 +221,3 @@ true
   transactionIndex: 0
 }
 ```
-
------------------
-
-### Create your Ethereum Account
-
-
-```bash
-$ cd eblocPOA
-$ eblocPath="$PWD"
-$ geth --datadir="$eblocPath" account new
-Your new account is locked with a password. Please give a password. Do not forget this password.
-Passphrase:
-Repeat passphrase:
-Address: {a0a50a64cac0744dea5287d1025b8ef28aeff36e}
-```
-
-Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
-
-You should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
-
-```
-[~/eblocPOA]$ ls keystore
-UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
-```
-
------------------
-
-### **Access your Ethereum Account using eBlocWallet**
-
-In order to use eBlocWallet, first `sudo bash server.sh` should be executed, hence `geth-server` should run on the background. Open (http://ebloc.cmpe.boun.edu.tr:3002). Then on the right top corner press:
-
-`(),` => `Add Custom Node` => `Save & Use Custom Node`. 
-
-Now if the read warning message is removed, your eBlocWallet is connected to your `geth-server`.
-
-`Send Ether and Tokes` => Select `Keystore File (UTC / JSON)`=>`SELECT WALLET FILE` (Your wallet is located under `eblocPOA/keystore` name starting with `UTC`) => `Unlock`
-
-<img width="1100" alt="screen shot 2018-02-12 at 13 29 13" src="https://user-images.githubusercontent.com/18537398/36092854-dfb53d80-0ff9-11e8-9dc5-b2e788d01bd5.png">
-
-Later you should see your account information (balance, account, etc).
-
-<img width="1088" alt="screen shot 2018-02-12 at 13 38 48" src="https://user-images.githubusercontent.com/18537398/36092942-2fa6c0ac-0ffa-11e8-9664-4f9df315f407.png">
-
-### **How to attach to eBloc Network Status**
-
-If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015 please follow: https://github.com/ebloc/eBloc/issues/2
-
-### **Some helpful links**
-
-- [Managing your accounts](https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts)
-- [Sending Ether on geth-client](https://github.com/ethereum/go-ethereum/wiki/Sending-ether)
