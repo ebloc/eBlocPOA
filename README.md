@@ -86,7 +86,7 @@ cd eblocPOA
 git clone https://github.com/cubedro/eth-net-intelligence-api
 
 cd eth-net-intelligence-api
-npm -g install
+npm install
 ```
 
 ### Initialises a new genesis block and definition for the network 
@@ -195,11 +195,6 @@ bash stats.sh
 - `sudo pm2 show app` should return some output starting with `"status            │ online"`.
 
 Now, you should see your node on http://ebloc.cmpe.boun.edu.tr:3015. 
-
-If you successfully see your name, put this line `bash stats.sh` into last line of `server.sh` file.
-
-If you are connected following peer# cell should show minimum `1`.
-<img width="884" alt="screen shot 2017-02-21 at 12 35 35" src="https://cloud.githubusercontent.com/assets/18537398/23159009/e117c500-f829-11e6-9eb9-70870da9c65f.png">
 
 -----------------
 
