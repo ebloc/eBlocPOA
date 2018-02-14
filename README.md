@@ -178,6 +178,29 @@ If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015
 
 Please follow: https://github.com/ebloc/eBloc/issues/2
 
+#### To Run
+
+- Please open `stats.sh` file under `eblocPOA`directory. Write your unique name instead of `mynameis`. 
+
+- :warning: Change `DATADIR` variable with path for `eth-net-intelligence-api` directory :warning:
+
+- :warning: `geth-server` should be running on the background :warning: 
+
+#### Finally you should run following command
+
+```
+bash stats.sh
+```
+
+- `sudo pm2 show app` should return some output starting with `"status            │ online"`.
+
+Now, you should see your node on http://ebloc.cmpe.boun.edu.tr:3015. 
+
+If you successfully see your name, put this line `bash stats.sh` into last line of `server.sh` file.
+
+If you are connected following peer# cell should show minimum `1`.
+<img width="884" alt="screen shot 2017-02-21 at 12 35 35" src="https://cloud.githubusercontent.com/assets/18537398/23159009/e117c500-f829-11e6-9eb9-70870da9c65f.png">
+
 -----------------
 
 ### **Access your Ethereum Account using eBlocWallet**
