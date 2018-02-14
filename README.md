@@ -89,7 +89,7 @@ You should see your `Keystore File (UTC / JSON)`under `private/keystore` directo
 ```
 [~/eblocPOA]$ ls private/keystore
 UTC--2018-02-12T10-50-12.998304000Z--3b027ff2d229dd1c7918910dee32048f5f65b70d
-
+```
 
 ### Initialises a new genesis block and definition for the network 
 :warning: Do `bash initialize.sh` only once. You do not need to do it again :warning:
