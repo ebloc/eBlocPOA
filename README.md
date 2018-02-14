@@ -69,28 +69,6 @@ cd $HOME
 git clone https://github.com/avatar-lavventura/eblocPOA.git
 ```
 
-### Create your Ethereum Account
-
-
-```bash
-$ cd eblocPOA
-$ eblocPath="$PWD"
-$ geth --datadir="$eblocPath" account new
-Your new account is locked with a password. Please give a password. Do not forget this password.
-Passphrase:
-Repeat passphrase:
-Address: {a0a50a64cac0744dea5287d1025b8ef28aeff36e}
-```
-
-Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
-
-You should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
-
-```
-[~/eblocPOA]$ ls keystore
-UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
-```
-
 ### Initialises a new genesis block and definition for the network 
 :warning: Do `bash initialize.sh` only once. You do not need to do it again :warning:
 
@@ -179,6 +157,30 @@ true
   transactionHash: "0xf92c11b6bd80ab12d5d63f7c6909ac7fc45a6b8052c29256dd28bd97b6375f1b",
   transactionIndex: 0
 }
+```
+
+-----------------
+
+### Create your Ethereum Account
+
+
+```bash
+$ cd eblocPOA
+$ eblocPath="$PWD"
+$ geth --datadir="$eblocPath" account new
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Passphrase:
+Repeat passphrase:
+Address: {a0a50a64cac0744dea5287d1025b8ef28aeff36e}
+```
+
+Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
+
+You should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
+
+```
+[~/eblocPOA]$ ls keystore
+UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
 ```
 
 -----------------
