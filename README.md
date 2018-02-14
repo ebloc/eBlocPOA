@@ -182,7 +182,7 @@ Later you should see your account information (balance, account, etc).
 
 -----------------
 
-### **Helpful command on geth client**
+### **Helpful commands on geth client**
 
 Please try following commands on your `geth-client` console.
 
