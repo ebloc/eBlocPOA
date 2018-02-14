@@ -129,6 +129,12 @@ UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
 
 -----------------
 
+### **How to attach to eBloc Network Status**
+
+If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015 please follow: https://github.com/ebloc/eBloc/issues/2
+
+-----------------
+
 ### **Access your Ethereum Account using eBlocWallet**
 
 In order to use eBlocWallet, first `sudo bash server.sh` should be executed, hence `geth-server` should run on the background. Open (http://ebloc.cmpe.boun.edu.tr:3002). Then on the right top corner press:
@@ -145,9 +151,7 @@ Later you should see your account information (balance, account, etc).
 
 <img width="1088" alt="screen shot 2018-02-12 at 13 38 48" src="https://user-images.githubusercontent.com/18537398/36092942-2fa6c0ac-0ffa-11e8-9664-4f9df315f407.png">
 
-### **How to attach to eBloc Network Status**
-
-If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015 please follow: https://github.com/ebloc/eBloc/issues/2
+-----------------
 
 ### **Some helpful links**
 
