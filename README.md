@@ -69,6 +69,8 @@ cd $HOME
 git clone https://github.com/avatar-lavventura/eblocPOA.git
 ```
 
+Enter into eblocPOA directory: `cd eblocPOA`
+
 ### Initialises a new genesis block and definition for the network 
 :warning: Do `bash initialize.sh` only once. You do not need to do it again :warning:
 
