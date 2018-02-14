@@ -182,11 +182,6 @@ Later you should see your account information (balance, account, etc).
 
 -----------------
 
-### **Some helpful links**
-
-- [Managing your accounts](https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts)
-- [Sending Ether on geth-client](https://github.com/ethereum/go-ethereum/wiki/Sending-ether)
-
 ### **Helpful command on geth client**
 
 Please try following commands on your `geth-client` console.
@@ -248,3 +243,8 @@ true
   transactionIndex: 0
 }
 ```
+
+### **Some helpful links**
+
+- [Managing your accounts](https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts)
+- [Sending Ether on geth-client](https://github.com/ethereum/go-ethereum/wiki/Sending-ether)
