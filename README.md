@@ -4,13 +4,27 @@
 
 ### **Installation Instructions for Mac**
 
+- From following link: https://nodejs.org/en/, download `9.5.0 Current`.
+
 ```bash
+sudo npm install npm pm2 -g
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share} ~/.npm
+
 brew install go
 git clone https://github.com/ethereum/go-ethereum
 cd go-ethereum
 make geth
 ```
 ### **Installation Instructions for Linux**
+
+#### Node.js and Node Package Manager(npm) installation
+
+```
+sudo apt-get install nodejs npm
+sudo npm install pm2 -g
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share} ~/.npm
+```
 
 #### **Go-installation (https://github.com/golang/go/wiki/Ubuntu)**
 
@@ -22,7 +36,7 @@ sudo apt-get install golang-1.9-go
 
 - Put this line `export PATH=$PATH:/usr/lib/go-1.9/bin`  into `.profile` file.
 
-#### **Geth Installation**
+#### **Geth Installation (https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu)**
 
 ```bash
 sudo apt-get install git
@@ -69,6 +83,10 @@ cd $HOME
 git clone https://github.com/ebloc/eblocPOA.git
 
 cd eblocPOA
+git clone https://github.com/cubedro/eth-net-intelligence-api
+
+cd eth-net-intelligence-api
+npm -g install
 ```
 
 ### Initialises a new genesis block and definition for the network 
@@ -159,6 +177,29 @@ sudo chown -R $(whoami) private/keystore/UTC--...
 If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015 ; 
 
 Please follow: https://github.com/ebloc/eBloc/issues/2
+
+#### To Run
+
+- Please open `stats.sh` file under `eblocPOA`directory. Write your unique name instead of `mynameis`. 
+
+- :warning: Change `DATADIR` variable with path for `eth-net-intelligence-api` directory :warning:
+
+- :warning: `geth-server` should be running on the background :warning: 
+
+#### Finally you should run following command
+
+```
+bash stats.sh
+```
+
+- `sudo pm2 show app` should return some output starting with `"status            │ online"`.
+
+Now, you should see your node on http://ebloc.cmpe.boun.edu.tr:3015. 
+
+If you successfully see your name, put this line `bash stats.sh` into last line of `server.sh` file.
+
+If you are connected following peer# cell should show minimum `1`.
+<img width="884" alt="screen shot 2017-02-21 at 12 35 35" src="https://cloud.githubusercontent.com/assets/18537398/23159009/e117c500-f829-11e6-9eb9-70870da9c65f.png">
 
 -----------------
 
