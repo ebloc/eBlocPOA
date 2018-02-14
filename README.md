@@ -157,6 +157,7 @@ sudo chown -R $(whoami) private/keystore/UTC--...
 ### **How to attach to eBloc Network Status**
 
 If you want to see the status of your node on http://ebloc.cmpe.boun.edu.tr:3015 ; 
+
 Please follow: https://github.com/ebloc/eBloc/issues/2
 
 -----------------
