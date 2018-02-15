@@ -34,7 +34,7 @@ sudo apt-get update
 sudo apt-get install golang-1.9-go
 ```
 
-- Put this line `export PATH=$PATH:/usr/lib/go-1.9/bin`  into `.profile` file.
+- Put this line `export PATH=$PATH:/usr/lib/go-1.9/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
 
 #### **Geth Installation (https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu)**
 
