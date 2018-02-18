@@ -79,7 +79,6 @@ make geth
 ### Downloading 
 
 ```bash
-cd $HOME
 git clone https://github.com/ebloc/eblocPOA.git
 
 cd eblocPOA
