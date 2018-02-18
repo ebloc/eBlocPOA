@@ -1,2 +1,6 @@
 
 *.out
+private/account
+private/geth
+private/keystore
+private/history
