@@ -79,7 +79,6 @@ make geth
 ### Downloading 
 
 ```bash
-cd $HOME 
 git clone https://github.com/ebloc/eblocPOA.git
 
 cd eblocPOA
@@ -129,8 +128,7 @@ If you are successfully connected into `eblocPOA` network inside `geth` console;
 
 ```bash
 $ cd eblocPOA
-$ eblocPath="$PWD"
-$ geth --datadir="$eblocPath" account new
+$ geth --datadir private/ account new
 Your new account is locked with a password. Please give a password. Do not forget this password.
 Passphrase:
 Repeat passphrase:
@@ -139,10 +137,10 @@ Address: {a0a50a64cac0744dea5287d1025b8ef28aeff36e}
 
 Your new account is locked with a password. Please give a password. Do not forget this password. Please enter a difficult passphrase for your account. 
 
-You should see your `Keystore File (UTC / JSON)`under `keystore` directory. 
+You should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
 
 ```
-[~/eblocPOA]$ ls keystore
+[~/eblocPOA]$ ls private/keystore
 UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
 ```
 
@@ -210,7 +208,7 @@ Later, open (http://ebloc.cmpe.boun.edu.tr:3002). Then on the right top corner p
 
 Now if the read warning message is removed, your eBlocWallet is connected to your `geth-server`.
 
-`Send Ether and Tokes` => Select `Keystore File (UTC / JSON)`=>`SELECT WALLET FILE` (Your wallet is located under `eblocPOA/keystore` name starting with `UTC`) => `Unlock`
+`Send Ether and Tokes` => Select `Keystore File (UTC / JSON)`=>`SELECT WALLET FILE` (Your wallet is located under `eblocPOA/private/keystore` name starting with `UTC`) => `Unlock`
 
 <img width="1100" alt="screen shot 2018-02-12 at 13 29 13" src="https://user-images.githubusercontent.com/18537398/36092854-dfb53d80-0ff9-11e8-9dc5-b2e788d01bd5.png">
 
