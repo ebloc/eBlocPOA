@@ -8,7 +8,6 @@
 
 ```bash
 sudo npm install npm pm2 -g
-sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share} ~/.npm
 
 brew install go
 git clone https://github.com/ethereum/go-ethereum
@@ -23,7 +22,6 @@ make geth
 sudo apt-get install nodejs npm
 sudo npm install pm2 -g
 sudo ln -s /usr/bin/nodejs /usr/bin/node
-sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share} ~/.npm
 ```
 
 #### **Go-installation (https://github.com/golang/go/wiki/Ubuntu)**
