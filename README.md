@@ -19,7 +19,9 @@ make geth
 #### Node.js and Node Package Manager(npm) installation
 
 ```
-sudo apt-get install nodejs npm
+sudo apt-get install nodejs
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
 sudo npm install pm2 -g
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
