@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo killall geth
 eblocPath="$PWD"
 geth --datadir="$eblocPath/private" init custom.json
 
