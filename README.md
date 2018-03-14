@@ -47,7 +47,7 @@ git pull
 make geth
 ```
 
-#### Do this for both Linux and Mac
+#### Do following for both Linux and Mac
 
 After `go-ethereum` is installed, copy `geth` located under `go-ethereum/build/bin` into` /usr/local/bin`:
 
