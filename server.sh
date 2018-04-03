@@ -1,7 +1,13 @@
 #!/bin/bash
 
+# ensure running as root
+if [ "$(id -u)" != "0" ]; then
+  echo "sudo: Please run: sudo bash server.sh";
+  exit
+fi
+
 PORT=3000;
-DATADIR="$HOME/ebloc_POA";
+DATADIR="$HOME/eblocPOA";
 
 sudo killall geth
 # pid=$(sudo lsof -n -i :$PORT | grep LISTEN| awk '{print $2}');
