@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ensure running as root
+# Ensure running as root
 if [ "$(id -u)" != "0" ]; then
   echo "sudo: Please run: sudo bash server.sh";
   exit
@@ -9,9 +9,10 @@ fi
 PORT=3000;
 DATADIR="$HOME/eblocPOA";
 
-# sudo killall geth
 pid=$(sudo lsof -n -i :$PORT | grep LISTEN| awk '{print $2}');
-sudo kill -9 $pid;
+if [ -n "$pid" ]; then
+  sudo kill -9 $pid # sudo killall geth
+fi
 
 nohup geth --datadir $DATADIR/private --port $PORT --rpcaddr 127.0.0.1 --rpc --rpcport 8545 --rpccorsdomain="*" --networkid 23422 --rpcapi eth,net,web3,personal --gasprice "18000000000" > gethServer.out &
 
