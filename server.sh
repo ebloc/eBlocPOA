@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Updates peers
+git fetch && git checkout origin/master -- peers.js
+
 # Ensure running as root
 if [ "$(id -u)" != "0" ]; then
   echo "sudo: Please run: sudo bash server.sh";
