@@ -67,11 +67,28 @@ $ geth version|grep "Version: 1"
 Version: 1.7.3-stable
 ```
 
-Please note that to update `geth`, please enter into `go-ethereum` directory and do:
+##### Please note that to update `geth`, please enter into `go-ethereum` directory and do:
 
 ```
 git pull
 make geth
+```
+
+if you face with any merging issues please do following:
+
+```
+latestTag=$(git describe --tags)
+
+git describe --tags #returns most recent tag
+git checkout $latestTag
+make geth
+```
+
+##### Fetch updated peers:
+
+```
+git fetch && git checkout origin/master -- peers.js
+
 ```
 
 ----------------------
