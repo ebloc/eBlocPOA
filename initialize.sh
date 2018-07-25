@@ -9,7 +9,7 @@ sed -i.bak "s/^\(DATADIR=\).*/\1\"$var\"/" server.sh && rm server.sh.bak
 sed -i.bak "s/^\(DATADIR=\).*/\1\"$var\"/" client.sh && rm client.sh.bak
 sed -i.bak "s/^\(DATADIR=\).*/\1\"$var\"/" stats.sh  && rm stats.sh.bak
 
-echo "Please enter name for eBloc Network Status:"
+echo -e "\nPlease enter name for eBloc Network Status:"
 read var
 
 if [[ $var == *\$* ]]; then
