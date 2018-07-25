@@ -84,11 +84,12 @@ git checkout $latestTag
 make geth
 ```
 
+-----------
+
 ##### Fetch updated peers:
 
 ```
 git fetch && git checkout origin/master -- peers.js
-
 ```
 
 ----------------------
