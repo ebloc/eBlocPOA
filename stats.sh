@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #To see your node on http://ebloc.cmpe.boun.edu.tr:3015
 DATADIR="$HOME"
 NAME="myNameIs"
