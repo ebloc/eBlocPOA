@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Updates peers
-git fetch && git checkout origin/master -- peers.js
+git fetch && git checkout origin/master -- peers.js 2>/dev/null
 
 # Ensure running as root
 if [ "$(id -u)" != "0" ]; then
