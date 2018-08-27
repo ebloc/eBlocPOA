@@ -60,11 +60,11 @@ $ which geth
 ```
 Now when you just type `geth`, it should work.
 
-Please note that `Geth` version should be greater or equal than `1.7.3`.
+Please note that `Geth` version should be greater or equal than `1.8.15`.
 
 ```bash
 $ geth version|grep "Version: 1"
-Version: 1.7.3-stable
+Version: 1.8.15-stable
 ```
 
 ##### Please note that to update `geth`, please enter into `go-ethereum` directory and do:
