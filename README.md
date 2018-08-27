@@ -69,14 +69,14 @@ Version: 1.8.15-stable
 
 ##### Please note that to update `geth`, please enter into `go-ethereum` directory and do:
 
-```
+```bash
 git pull
 make geth
 ```
 
 if you face with any merging issues please do following:
 
-```
+```bash
 latestTag=$(git describe --tags)
 
 git describe --tags #returns most recent tag
@@ -110,16 +110,16 @@ npm install
 ```
 
 ### Initialises a new genesis block and definition for the network 
-:warning: Do `bash initialize.sh` only once. You do not need to do it again :warning:
+:warning: Do `./initialize.sh` only once. You do not need to do it again :warning:
 
 ```bash
-bash initialize.sh
+./initialize.sh
 ```
 
 ### Server run (Always run with `sudo`)
 
 ```bash
-sudo bash server.sh
+sudo ./server.sh
 ```
 
 - If you want to kill your server please do: `sudo killall geth`
@@ -136,7 +136,7 @@ INFO [02-12|16:22:49] Imported new chain segment               blocks=1  
 ### Client run (geth console)
 
 ```bash
-bash client.sh
+./client.sh
 ```
 
 If you are successfully connected into `eblocPOA` network inside `geth` console; `peerCount` should return 1 or more, after running `net` command.
@@ -161,7 +161,7 @@ Your new account is locked with a password. Please give a password. Do not forge
 
 You should see your `Keystore File (UTC / JSON)`under `keystore` directory. 
 
-```
+```bash
 [~/eblocPOA]$ ls keystore
 UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
 ```
@@ -170,7 +170,7 @@ UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
 
 You can also create your Ethereum account inside your `geth-client`. Here your `Keystore File` will be created with root permission, `eBlocWallet` will not able to unlock it.
 
-```
+```bash
 > personal.newAccount()
 Passphrase:
 Repeat passphrase:
@@ -179,14 +179,14 @@ Repeat passphrase:
 
 Now you should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
 
-```
+```bash
 [~/eblocPOA]$ ls private/keystore
 UTC--2018-02-14T11-00-59.995395000Z--7d334606c71417f944ff8ba5c09e3672066244f8
 ```
 
 To give open acccess to the keystore file:
 
-```
+```bash
 sudo chown -R $(whoami) private/keystore/UTC--...
 ```
 
@@ -208,21 +208,21 @@ Please follow: https://github.com/ebloc/eBloc/issues/2
 
 #### Finally you should run following command
 
-```
-bash stats.sh
+```bash
+./stats.sh
 ```
 
 - `sudo pm2 show app` should return some output starting with `"status            │ online"`.
 
 Now, you should see your node on http://ebloc.cmpe.boun.edu.tr:3015. 
 
-- If you successfully see your name, put this line `bash stats.sh` into the last line of `server.sh` file.
+- If you successfully see your name, put this line `./stats.sh` into the last line of `server.sh` file.
 
 -----------------
 
 ### **Access your Ethereum Account using eBlocWallet**
 
-In order to use `eBlocWallet`, first `sudo bash server.sh` should be executed, hence `geth-server` should run on the background. 
+In order to use `eBlocWallet`, first `sudo ./server.sh` should be executed, hence `geth-server` should run on the background. 
 
 Later, open (http://ebloc.cmpe.boun.edu.tr:3002). Then on the right top corner press:
 
@@ -244,7 +244,7 @@ Later you should see your account information (balance, account, etc).
 
 Please try following commands on your `geth-client` console.
 
-```
+```bash
 Welcome to the Geth JavaScript console!
 
 instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
