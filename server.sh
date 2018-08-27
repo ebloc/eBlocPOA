@@ -20,8 +20,9 @@ fi
 nohup geth --syncmode fast --cache=1024 --shh --datadir $DATADIR/private --port $PORT --rpcaddr 127.0.0.1 --rpc --rpcport 8545 --rpccorsdomain="*" --networkid 23422 --rpcapi admin,eth,net,web3,debug,personal,shh --gasprice "18000000000" > gethServer.out &
 
 SLEEP_DURATION=10;
-echo "Please wait $SLEEP_DURATION seconds for geth-server to be activated before adding peers. You can decrease the sleep time on the server.sh script."
-sleep $SLEEP_DURATION
+echo "Please wait $SLEEP_DURATION seconds for geth-server to be activated before adding peers. 
+You can decrease the sleep duration in the server.sh script."
+sleep $SLEEP_DURATION # Sleep for few seconds for geth-server to be activated, otherwise peers won't added.
 
 echo "loadScript(\"$DATADIR"/peers.js"\")" | sudo geth --datadir "$DATADIR/private" attach ipc:$DATADIR/private/geth.ipc console
 echo "loadScript(\"$DATADIR"/pass.js"\")"  | sudo geth --datadir "$DATADIR/private" attach ipc:$DATADIR/private/geth.ipc console
