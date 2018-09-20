@@ -4,7 +4,7 @@
 
 ### **Installation Instructions for Mac**
 
-- From following link: https://nodejs.org/en/, download `9.5.0 Current`.
+- From following link: https://nodejs.org/en/, download `10.10.0 Current`.
 
 ```bash
 sudo npm install npm pm2 -g
