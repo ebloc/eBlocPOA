@@ -84,14 +84,6 @@ git checkout $latestTag
 make geth
 ```
 
------------
-
-##### Fetch updated peers:
-
-```
-git fetch && git checkout origin/master -- peers.js
-```
-
 ----------------------
 
 ## **eBloc Setup on Linux and macOS**
@@ -140,6 +132,14 @@ INFO [02-12|16:22:49] Imported new chain segment               blocks=1  
 ```
 
 If you are successfully connected into `eblocPOA` network inside `geth` console; `peerCount` should return 1 or more, after running `net` command.
+
+-----------
+
+##### Fetch updated peers:
+
+```
+git fetch && git checkout origin/master -- peers.js
+```
 
 -----------------
 
