@@ -58,7 +58,7 @@ $ sudo cp build/bin/geth /usr/local/bin/
 $ which geth
 /usr/local/bin/geth
 ```
-Now when you just type `geth`, it should work.
+Now when you just type `geth`, than you can jump to [eBloc Setup on Linux and macOS](https://github.com/ebloc/eblocPOA/blob/master/README.md#ebloc-setup-on-linux-and-macos).
 
 Please note that `Geth` version should be greater or equal than `1.8.15`.
 
