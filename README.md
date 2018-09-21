@@ -32,14 +32,6 @@ brew tap ethereum/ethereum
 brew install ethereum
 ```
 
-
-follow [installation instructions for Mac](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac) :warning:
-
-```shell
-brew tap ethereum/ethereum
-brew install ethereum
-```
-
 ### **Installation Instructions for Linux**
 
 #### Node.js and Node Package Manager(npm) installation
