@@ -36,8 +36,9 @@ sudo apt-get install golang-1.10-go
 
 - Put this line `export PATH=$PATH:/usr/lib/go-1.10/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
 
-#### **Geth Installation (https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu)**
+#### **Geth Installation**
 
+##### From source Code:
 ```bash
 sudo apt-get install git
 sudo apt-get install -y build-essential libgmp3-dev golang
@@ -46,6 +47,8 @@ cd go-ethereum/
 git pull
 make geth
 ```
+
+You could also find [installation instruction for ubuntu](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu).
 
 #### Do following for both Linux and Mac
 
