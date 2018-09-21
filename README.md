@@ -4,16 +4,23 @@
 
 ### **Installation Instructions for Mac**
 
+##### Pre-requirements
+
 - From following link: https://nodejs.org/en/, download `10.10.0 Current`.
 
 ```shell
 sudo npm install npm pm2 -g
-
 brew install go
+```
+
+##### Building from source
+
+```
 git clone https://github.com/ethereum/go-ethereum
 cd go-ethereum
 make geth
 ```
+
 ### **Installation Instructions for Linux**
 
 #### Node.js and Node Package Manager(npm) installation
@@ -38,11 +45,16 @@ sudo apt-get install golang-1.10-go
 
 #### **[Geth](https://github.com/ethereum/go-ethereum) Installation**
 
-##### Building from source
+##### Pre-requirements
 
 ```shell
 sudo apt-get install git
 sudo apt-get install -y build-essential libgmp3-dev golang
+```
+
+##### Building from source
+
+```shell
 git clone https://github.com/ethereum/go-ethereum 
 cd go-ethereum/
 git pull
