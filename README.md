@@ -21,7 +21,7 @@ cd go-ethereum
 make geth
 ```
 
-:warning: If something went wrong you during building from source can do follow [installation instructions for Mac](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac) :warning:
+:warning: If something went wrong during building from source can do follow [installation instructions for Mac](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac) :warning:
 
 ```shell
 brew tap ethereum/ethereum
@@ -68,7 +68,7 @@ git pull
 make geth
 ```
 
-:warning: If something went wrong you during building from source can do follow [installation instruction for ubuntu](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu) :warning:
+:warning: If something went wrong during building from source can do follow [installation instruction for ubuntu](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu) :warning:
 
 ```shell
 sudo apt-get install software-properties-common
