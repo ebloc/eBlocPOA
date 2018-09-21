@@ -234,7 +234,7 @@ sudo chown -R $(whoami) private/keystore/UTC--...
 
 ### **How to attach to eBloc Network Status**
 
-You can see your node on  eBloc Network Status (http://ebloc.cmpe.boun.edu.tr:3015). Setup is done when you run `./initialize.sh`. If you face with any issue please see the (guide)[https://github.com/ebloc/eBloc/issues/2].
+You can see your node on  eBloc Network Status (http://ebloc.cmpe.boun.edu.tr:3015). Setup is done when you run `./initialize.sh`. If you face with any issue please see the [guide](https://github.com/ebloc/eBloc/issues/2).
 
 #### To Run
 
