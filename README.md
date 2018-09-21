@@ -72,7 +72,7 @@ git pull
 make geth
 ```
 
-:warning: If something went wrong during building from source can follow [installation instruction for ubuntu](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu) :warning:
+:warning: If something went wrong during building from source install `go-ethereum` from PPA :warning:
 
 ```shell
 sudo apt-get install software-properties-common
