@@ -21,7 +21,7 @@ cd go-ethereum
 make geth
 ```
 
-:warning: If something went wrong during building from source can follow [installation instructions for Mac](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac) :warning:
+:warning: If something went wrong during building from source can do alternative installation follow [installation instructions for Mac](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac) :warning:
 
 ```shell
 brew tap ethereum/ethereum
