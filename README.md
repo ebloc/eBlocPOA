@@ -4,7 +4,7 @@
 
 ### **Installation Instructions for Mac**
 
-##### Pre-requirements
+#### Pre-requirements
 
 - From following link: https://nodejs.org/en/, download `10.10.0 Current`.
 
@@ -13,7 +13,7 @@ sudo npm install npm pm2 -g
 brew install go
 ```
 
-##### Building from source
+#### Geth Installation building from source
 
 ```
 git clone https://github.com/ethereum/go-ethereum
