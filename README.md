@@ -6,7 +6,7 @@
 
 #### Pre-requirements
 
-If you don't have Homebrew, [install it first](https://brew.sh).
+- If you don't have Homebrew, [install it first](https://brew.sh).
 
 - From following link: https://nodejs.org/en/, download `10.10.0 Current`.
 
