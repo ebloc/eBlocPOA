@@ -36,7 +36,7 @@ sudo apt-get install golang-1.10-go
 
 - Put this line `export PATH=$PATH:/usr/lib/go-1.10/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
 
-#### **Geth Installation**
+#### **[Geth](https://github.com/ethereum/go-ethereum) Installation**
 
 ##### Building from source
 
