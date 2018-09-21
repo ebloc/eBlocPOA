@@ -139,6 +139,9 @@ npm install
 ```
 
 ### Initialises a new genesis block and definition for the network 
+
+Navigate into `eblocPOA` directory.
+
 :warning: Do `./initialize.sh` only once. You do not need to do it again :warning:
 
 ```shell
@@ -155,7 +158,7 @@ sudo ./server.sh
 - You can keep track of output of your `geth-server` by running following: `sudo tail -f gethServer.out` 
 
 ```shell
- sudo tail -f gethServer.out
+$ sudo tail -f gethServer.out
 Password:
 INFO [02-12|16:22:34] Imported new chain segment               blocks=1  txs=0 mgas=0.000 elapsed=503.882µs mgasps=0.000  number=111203 hash=582a44…6e15dd
 INFO [02-12|16:22:49] Imported new chain segment               blocks=1  txs=0 mgas=0.000 elapsed=491.377µs mgasps=0.000  number=111204 hash=b752ec…a0725d
