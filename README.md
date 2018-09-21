@@ -6,6 +6,8 @@
 
 #### Pre-requirements
 
+If you don't have Homebrew, [install it first](https://brew.sh).
+
 - From following link: https://nodejs.org/en/, download `10.10.0 Current`.
 
 ```shell
@@ -21,7 +23,17 @@ cd go-ethereum
 make geth
 ```
 
-:warning: If something went wrong during building from source can do alternative installation follow [installation instructions for Mac](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac) :warning:
+:warning: If something went wrong during building from source install `go-ethereum` using Homebrew tap. :warning:
+
+Run the following commands to add the tap and install `geth`:
+
+```shell
+brew tap ethereum/ethereum
+brew install ethereum
+```
+
+
+follow [installation instructions for Mac](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac) :warning:
 
 ```shell
 brew tap ethereum/ethereum
