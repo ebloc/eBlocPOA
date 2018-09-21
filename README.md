@@ -23,7 +23,7 @@ cd go-ethereum
 make geth
 ```
 
-:warning: If something went wrong during building from source install `go-ethereum` using Homebrew tap. :warning:
+:warning: If something went wrong during building from source, install `go-ethereum` using Homebrew tap. :warning:
 
 Run the following commands to add the tap and install `geth`:
 
