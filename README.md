@@ -253,8 +253,6 @@ Please follow: https://github.com/ebloc/eBloc/issues/2
 
 Now, you should see your node on http://ebloc.cmpe.boun.edu.tr:3015. 
 
-- If you successfully see your name, put this line `./stats.sh` into the last line of `server.sh` file.
-
 -----------------
 
 ### **Access your Ethereum Account using eBlocWallet**
