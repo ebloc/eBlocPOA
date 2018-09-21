@@ -21,6 +21,13 @@ cd go-ethereum
 make geth
 ```
 
+- If something went wrong you during building from source can do follow [installation instructions for Mac](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac)
+
+```shell
+brew tap ethereum/ethereum
+brew install ethereum
+```
+
 ### **Installation Instructions for Linux**
 
 #### Node.js and Node Package Manager(npm) installation
@@ -69,6 +76,8 @@ sudo add-apt-repository -y ppa:ethereum/ethereum
 sudo apt-get update
 sudo apt-get install ethereum
 ```
+
+------------
 
 #### Do following for both Linux and Mac
 
