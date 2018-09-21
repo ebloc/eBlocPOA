@@ -10,7 +10,7 @@
 
 - From following link: https://nodejs.org/en/, download `10.10.0 Current`.
 
-```shell
+```bash
 sudo npm install npm pm2 -g
 brew install go
 ```
@@ -27,7 +27,7 @@ make geth
 
 Run the following commands to add the tap and install `geth`:
 
-```shell
+```bash
 brew tap ethereum/ethereum
 brew install ethereum
 ```
@@ -36,7 +36,7 @@ brew install ethereum
 
 #### Node.js and Node Package Manager(npm) installation
 
-```shell
+```bash
 sudo apt-get install nodejs
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
@@ -46,7 +46,7 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 #### **Go-installation (https://github.com/golang/go/wiki/Ubuntu)**
 
-```shell
+```bash
 sudo add-apt-repository ppa:gophers/archive
 sudo apt-get update
 sudo apt-get install golang-1.10-go
@@ -58,14 +58,14 @@ sudo apt-get install golang-1.10-go
 
 ##### Pre-requirements
 
-```shell
+```bash
 sudo apt-get install git
 sudo apt-get install -y build-essential libgmp3-dev golang
 ```
 
 ##### Building from source
 
-```shell
+```bash
 git clone https://github.com/ethereum/go-ethereum 
 cd go-ethereum/
 git pull
@@ -74,7 +74,7 @@ make geth
 
 :warning: If something went wrong during building from source install `go-ethereum` from PPA :warning:
 
-```shell
+```bash
 sudo apt-get install software-properties-common
 sudo add-apt-repository -y ppa:ethereum/ethereum
 sudo apt-get update
@@ -87,7 +87,7 @@ sudo apt-get install ethereum
 
 After `go-ethereum` is installed, copy `geth` located under `go-ethereum/build/bin` into` /usr/local/bin`:
 
-```shell
+```bash
 $ ls go-ethereum/build/bin
 geth
 $ sudo cp build/bin/geth /usr/local/bin/
@@ -97,7 +97,7 @@ $ which geth
 
 Please note that `Geth` version should be greater or equal than `1.8.15`.
 
-```shell
+```bash
 $ geth version|grep "Version: 1"
 Version: 1.8.15-stable
 ```
@@ -106,14 +106,14 @@ Now you can jump to [eBloc Setup on Linux and macOS](https://github.com/ebloc/eb
 
 ##### Please note that to update `geth`, please enter into `go-ethereum` directory and do:
 
-```shell
+```bash
 git pull
 make geth
 ```
 
 if you face with any merging issues please do following:
 
-```shell
+```bash
 latestTag=$(git describe --tags)
 
 git describe --tags #returns most recent tag
@@ -127,7 +127,7 @@ make geth
 
 ### Downloading 
 
-```shell
+```bash
 cd $HOME 
 git clone https://github.com/ebloc/eblocPOA.git
 
@@ -144,20 +144,20 @@ Navigate into `eblocPOA` directory.
 
 :warning: Do `./initialize.sh` only once. You do not need to do it again :warning:
 
-```shell
+```bash
 ./initialize.sh
 ```
 
 ### Server run (Always run with `sudo`)
 
-```shell
+```bash
 sudo ./server.sh
 ```
 
 - If you want to kill your server please do: `sudo killall geth`
 - You can keep track of output of your `geth-server` by running following: `sudo tail -f gethServer.out` 
 
-```shell
+```bash
 $ sudo tail -f gethServer.out
 Password:
 INFO [02-12|16:22:34] Imported new chain segment               blocks=1  txs=0 mgas=0.000 elapsed=503.882µs mgasps=0.000  number=111203 hash=582a44…6e15dd
@@ -167,7 +167,7 @@ INFO [02-12|16:22:49] Imported new chain segment               blocks=1  
 
 ### Client run (geth console)
 
-```shell
+```bash
 ./client.sh
 ```
 
@@ -177,7 +177,7 @@ If you are successfully connected into `eblocPOA` network inside `geth` console;
 
 ##### Fetch updated peers:
 
-```shell
+```bash
 git fetch && git checkout origin/master -- peers.js
 ```
 
@@ -187,7 +187,7 @@ git fetch && git checkout origin/master -- peers.js
 
 #### 1)
 
-```shell
+```bash
 $ cd eblocPOA
 $ eblocPath="$PWD"
 $ geth --datadir="$eblocPath" account new
@@ -201,7 +201,7 @@ Your new account is locked with a password. Please give a password. Do not forge
 
 You should see your `Keystore File (UTC / JSON)`under `keystore` directory. 
 
-```shell
+```bash
 [~/eblocPOA]$ ls keystore
 UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
 ```
@@ -210,7 +210,7 @@ UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
 
 You can also create your Ethereum account inside your `geth-client`. Here your `Keystore File` will be created with root permission, `eBlocWallet` will not able to unlock it.
 
-```shell
+```bash
 > personal.newAccount()
 Passphrase:
 Repeat passphrase:
@@ -219,14 +219,14 @@ Repeat passphrase:
 
 Now you should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
 
-```shell
+```bash
 [~/eblocPOA]$ ls private/keystore
 UTC--2018-02-14T11-00-59.995395000Z--7d334606c71417f944ff8ba5c09e3672066244f8
 ```
 
 To give open acccess to the keystore file:
 
-```shell
+```bash
 sudo chown -R $(whoami) private/keystore/UTC--...
 ```
 
@@ -246,7 +246,7 @@ You can see your node on  eBloc Network Status (http://ebloc.cmpe.boun.edu.tr:30
 
 #### Finally you should run following command
 
-```shell
+```bash
 ./stats.sh
 ```
 
@@ -280,7 +280,7 @@ Later you should see your account information (balance, account, etc).
 
 Please try following commands on your `geth-client` console.
 
-```shell
+```bash
 Welcome to the Geth JavaScript console!
 
 instance: Geth/v1.7.3-stable/darwin-amd64/go1.9.2
