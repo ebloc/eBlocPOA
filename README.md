@@ -183,7 +183,7 @@ git fetch && git checkout origin/master -- peers.js
 
 -----------------
 
-### Create your Ethereum Account
+### Create an Ethereum Account
 
 **Creating an account:**
 
