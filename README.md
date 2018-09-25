@@ -215,6 +215,8 @@ You can also create your Ethereum account inside your `geth-client`. Here your `
 Passphrase:
 Repeat passphrase:
 "0x7d334606c71417f944ff8ba5c09e3672066244f8"
+> eth.accounts
+["0x7d334606c71417f944ff8ba5c09e3672066244f8"]
 ```
 
 Now you should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
