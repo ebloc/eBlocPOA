@@ -1,4 +1,4 @@
-# **Proof-of-Authority Private Ethereum network (eBlocPOA)**
+# **Proof-of-Authority Private Ethereum Network (eBlocPOA)**
 
 Dashboard: [http://ebloc.cmpe.boun.edu.tr:3015/](http://ebloc.cmpe.boun.edu.tr:3015/)
 
