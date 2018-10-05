@@ -113,6 +113,7 @@ Now you can jump to [eBloc Setup on Linux and macOS](https://github.com/ebloc/eb
 ```bash
 git pull
 make geth
+sudo cp build/bin/geth /usr/local/bin/
 ```
 
 if you face with any merging issues please do following:
