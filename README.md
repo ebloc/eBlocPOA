@@ -1,6 +1,7 @@
 # **Connect into Private Ethereum Blockchain (eBlocPOA)**
 
 Dashboard: [http://ebloc.cmpe.boun.edu.tr:3015/](http://ebloc.cmpe.boun.edu.tr:3015/)
+Explorer: [http://ebloc.cmpe.boun.edu.tr:8000/](http://ebloc.cmpe.boun.edu.tr:8000/)
 
 ## **Preinstallations**
 
