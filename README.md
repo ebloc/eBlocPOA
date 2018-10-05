@@ -1,4 +1,6 @@
-# **Connect into Private Ethereum Blockchain ([eBlocPOA](http://ebloc.cmpe.boun.edu.tr:3015))**
+# **Connect into Private Ethereum Blockchain (eBlocPOA)**
+
+Dashboard: [http://ebloc.cmpe.boun.edu.tr:3015/](http://ebloc.cmpe.boun.edu.tr:3015/)
 
 ## **Preinstallations**
 
