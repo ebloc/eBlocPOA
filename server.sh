@@ -14,7 +14,7 @@ DATADIR="$HOME/eblocPOA";
 
 pid=$(sudo lsof -n -i :$PORT | grep LISTEN| awk '{print $2}');
 if [ -n "$pid" ]; then
-  sudo kill -9 $pid # sudo killall geth
+  sudo kill -9 $pid
 fi
 
 nohup geth --syncmode fast --cache=1024 --shh --datadir $DATADIR/private --port $PORT --rpcaddr 127.0.0.1 --rpc --rpcport 8545 --rpccorsdomain="*" --networkid 23422 --rpcapi admin,eth,net,web3,debug,personal,shh --gasprice "18000000000" > gethServer.out &
