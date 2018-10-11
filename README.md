@@ -4,6 +4,8 @@ Dashboard: [http://ebloc.cmpe.boun.edu.tr:3015/](http://ebloc.cmpe.boun.edu.tr:3
 
 Explorer: [http://ebloc.cmpe.boun.edu.tr:8000/](http://ebloc.cmpe.boun.edu.tr:8000/)
 
+Gitter: [https://gitter.im/eBloc/eblocPOA](https://gitter.im/eBloc/eblocPOA)
+
 ## **Preinstallations**
 
 ### **Installation Instructions for Mac**
