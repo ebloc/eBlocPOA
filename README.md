@@ -135,8 +135,9 @@ make geth
 ### Downloading 
 
 ```bash
-cd $HOME 
-git clone https://github.com/ebloc/eblocPOA.git
+cd $HOME
+# Clone repository.
+git clone https://github.com/ebloc/eblocPOA.git 
 
 cd eblocPOA
 git clone https://github.com/cubedro/eth-net-intelligence-api
