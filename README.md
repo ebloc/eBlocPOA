@@ -136,7 +136,6 @@ make geth
 
 ```bash
 cd $HOME
-# Clone repository.
 git clone https://github.com/ebloc/eblocPOA.git 
 
 cd eblocPOA
