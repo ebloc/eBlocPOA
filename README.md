@@ -1,8 +1,12 @@
 # **Proof-of-Authority Private Ethereum Network (eBlocPOA)**
 
+[![Join the chat at https://gitter.im/eBloc/eBlocPOA](https://badges.gitter.im/eBloc/eBlocPOA.svg)](https://gitter.im/eBloc/eBlocPOA?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Dashboard: [http://ebloc.cmpe.boun.edu.tr:3015/](http://ebloc.cmpe.boun.edu.tr:3015/)
 
 Explorer: [http://ebloc.cmpe.boun.edu.tr:8000/](http://ebloc.cmpe.boun.edu.tr:8000/)
+
+Chat on Gitter: [https://gitter.im/eBloc/eblocPOA](https://gitter.im/eBloc/eblocPOA)
 
 ## **Preinstallations**
 
@@ -106,7 +110,7 @@ $ geth version|grep "Version: 1"
 Version: 1.8.15-stable
 ```
 
-Now you can jump to [eBloc Setup on Linux and macOS](https://github.com/ebloc/eblocPOA/blob/master/README.md#ebloc-setup-on-linux-and-macos).
+Now you can jump to [eBloc Setup on Linux and macOS](https://github.com/ebloc/eBlocPOA/blob/master/README.md#ebloc-setup-on-linux-and-macos).
 
 ##### Please note that to update `geth`, please enter into `go-ethereum` directory and do:
 
@@ -133,10 +137,10 @@ make geth
 ### Downloading 
 
 ```bash
-cd $HOME 
-git clone https://github.com/ebloc/eblocPOA.git
+cd $HOME
+git clone https://github.com/ebloc/eBlocPOA.git 
 
-cd eblocPOA
+cd eBlocPOA
 git clone https://github.com/cubedro/eth-net-intelligence-api
 
 cd eth-net-intelligence-api
@@ -145,7 +149,7 @@ npm install
 
 ### Initialises a new genesis block and definition for the network 
 
-Navigate into `eblocPOA` directory.
+Navigate into `eBlocPOA` directory.
 
 :warning: Do `./initialize.sh` only once. You do not need to do it again :warning:
 
@@ -176,7 +180,7 @@ INFO [02-12|16:22:49] Imported new chain segment               blocks=1  
 ./client.sh
 ```
 
-If you are successfully connected into `eblocPOA` network inside `geth` console; `peerCount` should return 1 or more, after running `net` command.
+If you are successfully connected into `eBlocPOA` network inside `geth` console; `peerCount` should return 1 or more, after running `net` command.
 
 -----------------
 
@@ -185,7 +189,7 @@ If you are successfully connected into `eblocPOA` network inside `geth` console;
 **Creating an account:**
 
 ```bash
-$ cd eblocPOA
+$ cd eBlocPOA
 $ eblocPath="$PWD"
 $ geth --datadir="$eblocPath" account new
 Your new account is locked with a password. Please give a password. Do not forget this password.
@@ -199,7 +203,7 @@ Your new account is locked with a password. Please give a password. Do not forge
 You should see your `Keystore File (UTC / JSON)`under `keystore` directory. 
 
 ```bash
-[~/eblocPOA]$ ls keystore
+[~/eBlocPOA]$ ls keystore
 UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
 ```
 
@@ -219,7 +223,7 @@ Repeat passphrase:
 Now you should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
 
 ```bash
-[~/eblocPOA]$ ls private/keystore
+[~/eBlocPOA]$ ls private/keystore
 UTC--2018-02-14T11-00-59.995395000Z--7d334606c71417f944ff8ba5c09e3672066244f8
 ```
 
@@ -237,7 +241,7 @@ You can see your node on  eBloc Network Status (http://ebloc.cmpe.boun.edu.tr:30
 
 #### To Run
 
-- Please open `stats.sh` file under `eblocPOA`directory. Write your unique name instead of `mynameis`. 
+- Please open `stats.sh` file under `eBlocPOA`directory. Write your unique name instead of `mynameis`. 
 
 - :warning: Change `DATADIR` variable with path for `eth-net-intelligence-api` directory :warning:
 
@@ -265,7 +269,7 @@ Later, open (http://ebloc.cmpe.boun.edu.tr:3002). Then on the right top corner p
 
 Now if the read warning message is removed, your eBlocWallet is connected to your `geth-server`.
 
-`Send Ether and Tokes` => Select `Keystore File (UTC / JSON)`=>`SELECT WALLET FILE` (Your wallet is located under `eblocPOA/keystore` name starting with `UTC`) => `Unlock`
+`Send Ether and Tokes` => Select `Keystore File (UTC / JSON)`=>`SELECT WALLET FILE` (Your wallet is located under `eBlocPOA/keystore` name starting with `UTC`) => `Unlock`
 
 <img width="1100" alt="screen shot 2018-02-12 at 13 29 13" src="https://user-images.githubusercontent.com/18537398/36092854-dfb53d80-0ff9-11e8-9dc5-b2e788d01bd5.png">
 
