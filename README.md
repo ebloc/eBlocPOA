@@ -221,7 +221,7 @@ Repeat passphrase:
 Now you should see your `Keystore File (UTC / JSON)`under `private/keystore` directory. 
 
 ```bash
-[~/eblocPOA]$ ls private/keystore
+[~/eBlocPOA]$ ls private/keystore
 UTC--2018-02-14T11-00-59.995395000Z--7d334606c71417f944ff8ba5c09e3672066244f8
 ```
 
