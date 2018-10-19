@@ -4,7 +4,7 @@ Dashboard: [http://ebloc.cmpe.boun.edu.tr:3015/](http://ebloc.cmpe.boun.edu.tr:3
 
 Explorer: [http://ebloc.cmpe.boun.edu.tr:8000/](http://ebloc.cmpe.boun.edu.tr:8000/)
 
-Chat on Gitter: [https://gitter.im/eBloc/eblocPOA](https://gitter.im/eBloc/eblocPOA)
+Chat on Gitter: [https://gitter.im/eBloc/eBlocPOA](https://gitter.im/eBloc/eBlocPOA)
 
 ## **Preinstallations**
 
