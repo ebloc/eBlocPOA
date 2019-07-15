@@ -21,11 +21,14 @@ sudo npm install npm pm2 -g
 brew install go
 ```
 
+<!---
 #### Geth Installation building from source
 
 ```
-git clone https://github.com/ethereum/go-ethereum
-cd go-ethereum
+git clone https://github.com/ethereum/go-ethereum 
+cd go-ethereum/
+git pull
+git checkout 4bcc0a37ab70cb79b16893556cffdaad6974e7d8 # Geth/v1.8.27
 make geth
 ```
 
@@ -37,6 +40,7 @@ Run the following commands to add the tap and install `geth`:
 brew tap ethereum/ethereum
 brew install ethereum
 ```
+--->
 
 ### **Installation Instructions for Linux**
 
@@ -60,23 +64,25 @@ sudo apt-get install golang-1.10-go
 
 - Put this line `export PATH=$PATH:/usr/lib/go-1.10/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
 
-#### **[Geth](https://github.com/ethereum/go-ethereum) Installation**
+#### **[Geth](https://github.com/ethereum/go-ethereum) Pre-requirements**
 
-##### Pre-requirements
 
 ```bash
 sudo apt-get install git
 sudo apt-get install -y build-essential libgmp3-dev golang
 ```
 
+<!---
 ##### Building from source
 
 ```bash
 git clone https://github.com/ethereum/go-ethereum 
 cd go-ethereum/
 git pull
+git checkout 4bcc0a37ab70cb79b16893556cffdaad6974e7d8 # Geth/v1.8.27
 make geth
 ```
+
 
 :warning: If something went wrong during building from source install `go-ethereum` from PPA :warning:
 
@@ -86,10 +92,22 @@ sudo add-apt-repository -y ppa:ethereum/ethereum
 sudo apt-get update
 sudo apt-get install ethereum
 ```
-
+--->
 ------------
 
 #### Do following for both Linux and Mac
+
+##### **[Geth](https://github.com/ethereum/go-ethereum) Building from source** 
+
+It is recommended to install Geth version `1.8.27`.
+
+```bash
+git clone https://github.com/ethereum/go-ethereum 
+cd go-ethereum/
+git pull
+git checkout 4bcc0a37ab70cb79b16893556cffdaad6974e7d8 # Geth/v1.8.27
+make geth
+```
 
 After `go-ethereum` is installed, copy `geth` located under `go-ethereum/build/bin` into` /usr/local/bin`:
 
@@ -101,15 +119,16 @@ $ which geth
 /usr/local/bin/geth
 ```
 
-Please note that `Geth` version should be greater or equal than `1.8.15`.
+Please note that `Geth` version should be greater or equal than `1.8.27`.
 
 ```bash
-$ geth version|grep "Version: 1"
-Version: 1.8.15-stable
+$ geth version | grep "Version: 1"
+Version: 1.8.27-stable
 ```
 
 Now you can jump to [eBloc Setup on Linux and macOS](https://github.com/ebloc/eBlocPOA/blob/master/README.md#ebloc-setup-on-linux-and-macos).
 
+<!---
 ##### Please note that to update `geth`, please enter into `go-ethereum` directory and do:
 
 ```bash
@@ -127,6 +146,7 @@ git describe --tags #returns most recent tag
 git checkout $latestTag
 make geth
 ```
+--->
 
 ----------------------
 
@@ -145,13 +165,20 @@ cd eth-net-intelligence-api
 npm install
 ```
 
+### Create private folder
+
+```bash
+sudo mkdir /private
+```
+
 ### Initialises a new genesis block and definition for the network 
 
 Navigate into `eBlocPOA` directory.
 
-:warning: Do `./initialize.sh` only once. You do not need to do it again :warning:
+:warning: Do `/init_custom.sh` only once. You do not need to do it again :warning:
 
 ```bash
+sudo ./init_custom.sh
 ./initialize.sh
 ```
 
