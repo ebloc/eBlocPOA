@@ -57,9 +57,11 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 #### **Go-installation (https://github.com/golang/go/wiki/Ubuntu)**
 
 ```bash
-sudo add-apt-repository ppa:gophers/archive
 sudo apt-get update
-sudo apt-get install golang-1.10-go
+wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz
+sudo tar -xvf go1.13.3.linux-amd64.tar.gz
+rm -rf /usr/local/go
+sudo mv go /usr/local
 ```
 
 - Put this line `export PATH=$PATH:/usr/lib/go-1.10/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
