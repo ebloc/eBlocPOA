@@ -81,7 +81,7 @@ sudo apt-get install -y build-essential libgmp3-dev golang
 git clone https://github.com/ethereum/go-ethereum 
 cd go-ethereum/
 git pull
-git checkout 4bcc0a37ab70cb79b16893556cffdaad6974e7d8 # Geth/v1.8.27
+git checkout tags/v1.9.10 # update it with the latest version of geth
 make geth
 ```
 
@@ -101,13 +101,13 @@ sudo apt-get install ethereum
 
 ##### **[Geth](https://github.com/ethereum/go-ethereum) Building from source** 
 
-It is recommended to install Geth version `1.8.27`.
+It is recommended to install Geth version `1.9.10`.
 
 ```bash
 git clone https://github.com/ethereum/go-ethereum 
 cd go-ethereum/
 git pull
-git checkout 4bcc0a37ab70cb79b16893556cffdaad6974e7d8 # Geth/v1.8.27
+git checkout tags/v1.9.10 # update it with the latest version of geth
 make geth
 ```
 
@@ -121,11 +121,11 @@ $ which geth
 /usr/local/bin/geth
 ```
 
-Please note that `Geth` version should be greater or equal than `1.8.27`.
+Please note that `Geth` version should be greater or equal than `1.9.10`.
 
 ```bash
 $ geth version | grep "Version: 1"
-Version: 1.8.27-stable
+Version: 1.9.10-stable
 ```
 
 Now you can jump to [eBloc Setup on Linux and macOS](https://github.com/ebloc/eBlocPOA/blob/master/README.md#ebloc-setup-on-linux-and-macos).
