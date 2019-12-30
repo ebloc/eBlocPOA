@@ -75,6 +75,7 @@ sudo apt-get install -y build-essential libgmp3-dev golang
 git clone https://github.com/ethereum/go-ethereum 
 cd go-ethereum/
 git pull
+git checkout tags/v1.9.9 # version for the latest tag
 make geth
 ```
 
@@ -101,11 +102,11 @@ $ which geth
 /usr/local/bin/geth
 ```
 
-Please note that `Geth` version should be greater or equal than `1.8.15`.
+Please note that `Geth` version should be greater or equal than `1.9.9`.
 
 ```bash
 $ geth version|grep "Version: 1"
-Version: 1.8.15-stable
+Version: 1.9.9-stable
 ```
 
 Now you can jump to [eBloc Setup on Linux and macOS](https://github.com/ebloc/eBlocPOA/blob/master/README.md#ebloc-setup-on-linux-and-macos).
