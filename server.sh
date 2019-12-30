@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Updates peers
-git fetch 
+git fetch 2>/dev/null
 git checkout origin/master -- peers.js 2>/dev/null
 git checkout origin/master -- custom.json 2>/dev/null
 
