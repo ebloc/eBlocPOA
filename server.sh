@@ -17,7 +17,7 @@ if [ -n "$pid" ]; then
   sudo kill -9 $pid
 fi
 
-nohup geth --syncmode fast --cache=1024 --shh --datadir $DATADIR/private --port $PORT --rpcaddr 127.0.0.1 --rpc --rpcport 8545 --rpccorsdomain="*" --networkid 23422 --rpcapi admin,eth,net,web3,debug,personal,shh --gasprice "18000000000" > gethServer.out &
+nohup geth --syncmode fast --cache=1024 --shh --datadir $DATADIR/private --port $PORT --rpcaddr 127.0.0.1 --rpc --rpcport 8545 --rpccorsdomain="*" --networkid 23422 --rpcapi admin,eth,net,web3,debug,personal,shh --targetgaslimit '10000000000000' --gasprice "18000000000" --allow-insecure-unlock > gethServer.out &
 
 SLEEP_DURATION=10;
 echo "Please wait $SLEEP_DURATION seconds for geth-server to be activated before adding peers. 
