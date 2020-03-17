@@ -58,13 +58,13 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 ```bash
 sudo apt-get update
-wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz
-sudo tar -xvf go1.13.3.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.14.linux-amd64.tar.gz
+sudo tar -xvf go1.14.linux-amd64.tar.gz
 rm -rf /usr/local/go
 sudo mv go /usr/local
 ```
 
-- Put this line `export PATH=$PATH:/usr/lib/go-1.10/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
+- Put this line `export PATH=$PATH:/usr/local/go/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
 
 #### **[Geth](https://github.com/ethereum/go-ethereum) Pre-requirements**
 
