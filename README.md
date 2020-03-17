@@ -60,6 +60,7 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 sudo apt-get update
 wget https://dl.google.com/go/go1.14.linux-amd64.tar.gz
 sudo tar -xvf go1.14.linux-amd64.tar.gz
+rm -f go1.14.linux-amd64.tar.gz
 rm -rf /usr/local/go
 sudo mv go /usr/local
 ```
@@ -101,13 +102,13 @@ sudo apt-get install ethereum
 
 ##### **[Geth](https://github.com/ethereum/go-ethereum) Building from source** 
 
-It is recommended to install Geth version `1.9.10`.
+It is recommended to install Geth version `1.9.13`.
 
 ```bash
 git clone https://github.com/ethereum/go-ethereum 
 cd go-ethereum/
 git pull
-git checkout tags/v1.9.10 # update it with the latest version of geth
+git checkout tags/v1.9.13 # update it with the latest version of geth
 make geth
 ```
 
@@ -121,11 +122,11 @@ $ which geth
 /usr/local/bin/geth
 ```
 
-Please note that `Geth` version should be greater or equal than `1.9.10`.
+Please note that `Geth` version should be greater or equal than `1.9.13`.
 
 ```bash
 $ geth version | grep "Version: 1"
-Version: 1.9.10-stable
+Version: 1.9.13-unstable
 ```
 
 Now you can jump to [eBloc Setup on Linux and macOS](https://github.com/ebloc/eBlocPOA/blob/master/README.md#ebloc-setup-on-linux-and-macos).
@@ -170,7 +171,7 @@ npm install
 ### Create private folder
 
 ```bash
-sudo mkdir /private
+sudo mkdir -p /private
 ```
 
 ### Initialises a new genesis block and definition for the network 
