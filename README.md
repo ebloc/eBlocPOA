@@ -61,8 +61,9 @@ sudo apt-get update
 wget https://dl.google.com/go/go1.14.linux-amd64.tar.gz
 sudo tar -xvf go1.14.linux-amd64.tar.gz
 rm -f go1.14.linux-amd64.tar.gz
-rm -rf /usr/local/go
+sudo rm -rf /usr/local/go
 sudo mv go /usr/local
+export GOROOT=/usr/local/go
 ```
 
 - Put this line `export PATH=$PATH:/usr/local/go/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
