@@ -32,7 +32,7 @@ git checkout 4bcc0a37ab70cb79b16893556cffdaad6974e7d8 # Geth/v1.8.27
 make geth
 ```
 
-:warning: If something went wrong during building from source, install `go-ethereum` using Homebrew tap. :warning:
+:warning: If something went wrong during building from source, install `go-ethereum` using Homebrew tap. 
 
 Run the following commands to add the tap and install `geth`:
 
@@ -88,7 +88,7 @@ make geth
 ```
 
 
-:warning: If something went wrong during building from source install `go-ethereum` from PPA :warning:
+:warning: If something went wrong during building from source install `go-ethereum` from PPA
 
 ```bash
 sudo apt-get install software-properties-common
@@ -179,7 +179,7 @@ sudo mkdir -p /private
 
 Navigate into `eBlocPOA` directory.
 
-:warning: Do `/init_custom.sh` only once. You do not need to do it again :warning:
+:warning: Do `/init_custom.sh` only once. You do not need to do it again
 
 ```bash
 sudo ./init_custom.sh
@@ -272,9 +272,9 @@ You can see your node on  eBloc Network Status (http://ebloc.cmpe.boun.edu.tr:30
 
 - Please open `stats.sh` file under `eBlocPOA`directory. Write your unique name instead of `mynameis`. 
 
-- :warning: Change `DATADIR` variable with path for `eth-net-intelligence-api` directory :warning:
+- :warning: Change `DATADIR` variable with path for `eth-net-intelligence-api` directory
 
-- :warning: `geth-server` should be running on the background :warning: 
+- :warning: `geth-server` should be running on the background 
 
 #### Finally you should run following command
 
