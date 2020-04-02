@@ -44,7 +44,7 @@ brew install ethereum
 
 ### **Installation Instructions for Linux**
 
-#### Node.js and Node Package Manager(npm) installation
+#### Node.js and Node Package Manager (`npm`) installation
 
 ```bash
 sudo apt-get install nodejs
@@ -69,7 +69,7 @@ export GOROOT=/usr/local/go
 
 - Put this line `export PATH=$PATH:/usr/local/go/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
 
-#### **Go Ethereum(geth) pre-requirements**
+#### **Go Ethereum (`geth`) Pre-requirements**
 
 ```bash
 sudo apt-get install git
@@ -101,7 +101,7 @@ sudo apt-get install ethereum
 
 ### Do following for both Linux and Mac
 
-#### **Go Ethereum(geth) building from source** 
+#### **Go Ethereum (`geth`) building from source** 
 
 => [https://github.com/ethereum/go-ethereum](https://github.com/ethereum/go-ethereum)
 
@@ -238,7 +238,7 @@ You should see your `Keystore File (UTC / JSON)`under `keystore` directory.
 UTC--2018-02-14T10-46-54.423218000Z--a0a50a64cac0744dea5287d1025b8ef28aeff36e
 ```
 
-**On the console, use:**
+**Using Console:**
 
 You can also create your Ethereum account inside your `geth-client`. Here your `Keystore File` will be created with root permission, `eBlocWallet` will not able to unlock it.
 
