@@ -69,10 +69,10 @@ export GOROOT=/usr/local/go
 
 - Put this line `export PATH=$PATH:/usr/local/go/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
 
-#### **[Geth]**
+#### **Geth**
 => [Geth installation link](https://github.com/ethereum/go-ethereum)
 
-#####Pre-requirements**
+#####**Pre-requirements**
 
 ```bash
 sudo apt-get install git
