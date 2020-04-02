@@ -69,7 +69,7 @@ export GOROOT=/usr/local/go
 
 - Put this line `export PATH=$PATH:/usr/local/go/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
 
-#### **Go Ethereum Pre-requirements**
+#### **Go Ethereum(geth) pre-requirements**
 
 ```bash
 sudo apt-get install git
@@ -101,11 +101,11 @@ sudo apt-get install ethereum
 
 ### Do following for both Linux and Mac
 
-#### **Go Ethereum (`geth`) building from source** 
+#### **Go Ethereum(geth) building from source** 
 
 => [https://github.com/ethereum/go-ethereum](https://github.com/ethereum/go-ethereum)
 
-It is recommended to install Geth version `1.9.13`.
+It is recommended to install `geth` version `1.9.13`.
 
 ```bash
 git clone https://github.com/ethereum/go-ethereum 
