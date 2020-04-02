@@ -55,7 +55,7 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
 #### **Go-installation**
-- [Go-installation link](https://github.com/golang/go/wiki/Ubuntu)
+=> [Go-installation link](https://github.com/golang/go/wiki/Ubuntu)
 
 ```bash
 sudo apt-get update
@@ -69,8 +69,8 @@ export GOROOT=/usr/local/go
 
 - Put this line `export PATH=$PATH:/usr/local/go/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
 
-#### **[Geth] 
-[Geth installation link](https://github.com/ethereum/go-ethereum)
+#### **[Geth]**
+=> [Geth installation link](https://github.com/ethereum/go-ethereum)
 
 #####Pre-requirements**
 
