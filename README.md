@@ -54,7 +54,8 @@ sudo npm install pm2 -g
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
-#### **Go-installation ([https://github.com/golang/go/wiki/Ubuntu](https://github.com/golang/go/wiki/Ubuntu))**
+#### **Go-installation**
+- [Go-installation link](https://github.com/golang/go/wiki/Ubuntu)
 
 ```bash
 sudo apt-get update
@@ -68,8 +69,10 @@ export GOROOT=/usr/local/go
 
 - Put this line `export PATH=$PATH:/usr/local/go/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
 
-#### **[Geth](https://github.com/ethereum/go-ethereum) Pre-requirements**
+#### **[Geth] 
+[Geth installation link](https://github.com/ethereum/go-ethereum)
 
+#####Pre-requirements**
 
 ```bash
 sudo apt-get install git
@@ -88,7 +91,7 @@ make geth
 ```
 
 
-:warning: If something went wrong during building from source install `go-ethereum` from PPA
+.. warning:: If something went wrong during building from source install `go-ethereum` from PPA
 
 ```bash
 sudo apt-get install software-properties-common
@@ -179,7 +182,7 @@ sudo mkdir -p /private
 
 Navigate into `eBlocPOA` directory.
 
-:warning: Do `/init_custom.sh` only once. You do not need to do it again
+.. warning:: Do `/init_custom.sh` only once. You do not need to do it again
 
 ```bash
 sudo ./init_custom.sh
@@ -272,9 +275,9 @@ You can see your node on  eBloc Network Status (http://ebloc.cmpe.boun.edu.tr:30
 
 - Please open `stats.sh` file under `eBlocPOA`directory. Write your unique name instead of `mynameis`. 
 
-- :warning: Change `DATADIR` variable with path for `eth-net-intelligence-api` directory
+- .. warning:: Change `DATADIR` variable with path for `eth-net-intelligence-api` directory
 
-- :warning: `geth-server` should be running on the background 
+- .. warning:: `geth-server` should be running on the background 
 
 #### Finally you should run following command
 
