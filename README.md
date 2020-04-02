@@ -32,7 +32,7 @@ git checkout 4bcc0a37ab70cb79b16893556cffdaad6974e7d8 # Geth/v1.8.27
 make geth
 ```
 
-:warning: If something went wrong during building from source, install `go-ethereum` using Homebrew tap. 
+.. warning:: If something went wrong during building from source, install `go-ethereum` using Homebrew tap. 
 
 Run the following commands to add the tap and install `geth`:
 
@@ -101,7 +101,7 @@ sudo apt-get install ethereum
 
 #### Do following for both Linux and Mac
 
-##### **[Geth](https://github.com/ethereum/go-ethereum) Building from source** 
+##### **Geth building from source** 
 
 It is recommended to install Geth version `1.9.13`.
 
