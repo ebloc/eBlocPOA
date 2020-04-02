@@ -54,7 +54,7 @@ sudo npm install pm2 -g
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
-#### **Go-installation (https://github.com/golang/go/wiki/Ubuntu)**
+#### **Go-installation ([https://github.com/golang/go/wiki/Ubuntu](https://github.com/golang/go/wiki/Ubuntu))**
 
 ```bash
 sudo apt-get update
