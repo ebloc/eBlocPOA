@@ -285,29 +285,9 @@ You can see your node on  eBloc Network Status (http://ebloc.cmpe.boun.edu.tr:30
 ./stats.sh
 ```
 
-- `sudo pm2 show app` should return some output starting with `"status            │ online"`.
+- `sudo pm2 show app` should return some output starting with `"status  │ online"`.
 
 Now, you should see your node on http://ebloc.cmpe.boun.edu.tr:3015. 
-
------------------
-
-### **Access your Ethereum Account using eBlocWallet**
-
-In order to use `eBlocWallet`, first `sudo ./server.sh` should be executed, hence `geth-server` should run on the background. 
-
-Later, open (http://ebloc.cmpe.boun.edu.tr:3002). Then on the right top corner press:
-
-`(),` => `Add Custom Node` => `Save & Use Custom Node`. 
-
-Now if the read warning message is removed, your eBlocWallet is connected to your `geth-server`.
-
-`Send Ether and Tokes` => Select `Keystore File (UTC / JSON)`=>`SELECT WALLET FILE` (Your wallet is located under `eBlocPOA/keystore` name starting with `UTC`) => `Unlock`
-
-<img width="1100" alt="screen shot 2018-02-12 at 13 29 13" src="https://user-images.githubusercontent.com/18537398/36092854-dfb53d80-0ff9-11e8-9dc5-b2e788d01bd5.png">
-
-Later you should see your account information (balance, account, etc).
-
-<img width="1088" alt="screen shot 2018-02-12 at 13 38 48" src="https://user-images.githubusercontent.com/18537398/36092942-2fa6c0ac-0ffa-11e8-9664-4f9df315f407.png">
 
 -----------------
 
