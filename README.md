@@ -72,7 +72,7 @@ export GOROOT=/usr/local/go
 #### **Geth**
 => [Geth installation link](https://github.com/ethereum/go-ethereum)
 
-#####**Pre-requirements**
+##### **Pre-requirements**
 
 ```bash
 sudo apt-get install git
