@@ -54,7 +54,7 @@ sudo npm install pm2 -g
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
-#### **Go-installation**
+#### **Go Installation**
 => [https://github.com/golang/go/wiki/Ubuntu](https://github.com/golang/go/wiki/Ubuntu)
 
 ```bash
@@ -69,7 +69,7 @@ export GOROOT=/usr/local/go
 
 - Put this line `export PATH=$PATH:/usr/local/go/bin`  into `$HOME/.profile` file and do `source $HOME/.profile`
 
-#### **Geth**
+#### **Go Ethereum (`geth`) Installation**
 => [https://github.com/ethereum/go-ethereum](https://github.com/ethereum/go-ethereum)
 
 ##### **Pre-requirements**
