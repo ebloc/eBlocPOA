@@ -10,7 +10,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 PORT=3000;
-DATADIR="$HOME/eblocPOA";
+DATADIR="$HOME/eBlocPOA";
 
 pid=$(sudo lsof -n -i :$PORT | grep LISTEN| awk '{print $2}');
 if [ -n "$pid" ]; then
