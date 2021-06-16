@@ -1,0 +1,8 @@
+#!/bin/bash
+
+_HOME=""
+REPODIR=""
+NAME=""
+DATADIR=""
+PORT=30303
+RPCPORT=8545

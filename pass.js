@@ -9,8 +9,4 @@ function checkAllBalances() {
     console.log("  Total balance: " + totalBal + " ether");
 };
 
-checkAllBalances();
-
-personal.unlockAccount(eth.accounts[0], "yourPassword", 0); 
-personal.unlockAccount(eth.accounts[1], "yourPassword", 0); 
-//...
+checkAllBalances()
