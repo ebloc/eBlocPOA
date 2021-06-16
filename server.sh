@@ -1,9 +1,31 @@
 #!/bin/bash
 
 BLUE="\033[1;36m"
-NC="\033[0m" # no color
-SLEEP_DURATION=2
+NC="\033[0m"  # no color
+SLEEP_DURATION=10
 SLEEP_TILL_SERVER_STARTS=1
+
+connect_peers() {
+    printf "${BLUE}==>${NC} Connecting to peers\n"
+    echo "loadScript(\"$REPODIR"/peers.js"\")" | \
+        sudo geth --datadir "$DATADIR" attach ipc:$FILE_IPC console
+}
+
+_kill() {
+    pkill -1 -f $1
+    pids=$(pgrep -f -l $1 | awk '{print $1}')
+    if [ "$str" != "" ]
+    then
+        sudo kill -9 $pids
+    fi
+}
+
+update_peers () {
+    (&>/dev/null git fetch --all &)  # update peers
+    git checkout origin/master -- peers.js 2>/dev/null
+    git checkout origin/master -- custom.json 2>/dev/null
+}
+
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 source $DIR/config.sh
@@ -12,32 +34,11 @@ FILE_IPC=$DATADIR/geth.ipc
 printf "${BLUE}==>${NC} FILE_IPC_PATH=$FILE_IPC\n"
 printf "${BLUE}==>${NC} REPODIR=$REPODIR\n"
 
-connect_peers () {
-    echo -e "## Connecting to peers"
-    echo "loadScript(\"$REPODIR"/peers.js"\")" | \
-        sudo geth --datadir "$DATADIR" attach ipc:$FILE_IPC console
-}
-
-_kill () {
-        pkill -1 -f $1
-        pids=$(pgrep -f -l $1 | awk '{print $1}')
-        if [ "$str" != "" ]
-        then
-                sudo kill -9 $pids
-        fi
-}
-
-update_peers () {
-    (&>/dev/null git fetch --all &)  # update peers
-    git checkout origin/master -- peers.js 2>/dev/null
-    git checkout origin/master -- custom.json 2>/dev/null
-}
 if [ "$(id -u)" != "0" ]; then
     # ensures running as root
     echo "E: Please run: sudo ./server.sh";
     exit
 fi
-
 
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" >> $REPODIR/geth_server.out
 # update_peers
@@ -63,7 +64,6 @@ fi
 
 _kill geth
 geth version >> $REPODIR/geth_server.out
-
 sudo chown $(whoami) -R $DATADIR
 nohup geth --syncmode fast --cache=1024 --datadir $DATADIR --port $PORT \
       --http --http.addr 127.0.0.1 --http.port $RPCPORT --http.corsdomain "*" \

@@ -99,31 +99,26 @@ sudo apt-get install ethereum
 ### Do following for both Linux and Mac
 #### [Go Ethereum](https://github.com/ethereum/go-ethereum) (`geth`) building from source
 
-It is recommended to install latest `geth` version `1.9.23`.
+It is recommended to install the latest version of `geth`.
 
 ```bash
 git clone https://github.com/ethereum/go-ethereum
 cd go-ethereum/
 git pull
-git checkout tags/v1.9.23 # update it with the latest version of geth
+git checkout -f tags/v1.10.16
 make geth
 ```
 
 After `go-ethereum` is installed, copy `geth` located under `go-ethereum/build/bin` into` /usr/local/bin`:
 
 ```bash
-$ ls go-ethereum/build/bin
+$ ls build/bin
 geth
 $ sudo cp build/bin/geth /usr/local/bin/
 $ which geth
 /usr/local/bin/geth
-```
-
-Please note that `Geth` version should be greater or equal than `1.9.23`.
-
-```bash
 $ geth version | grep "Version: 1"
-Version: 1.9.23-stable
+Version: 1.10.6-stable
 ```
 
 Now you can jump to [eBloc Setup on Linux and macOS](https://github.com/ebloc/eBlocPOA/blob/master/README.md#ebloc-setup-on-linux-and-macos).
@@ -159,9 +154,11 @@ git clone https://github.com/ebloc/eBlocPOA.git
 cd eBlocPOA
 npm install
 
-git clone https://github.com/cubedro/eth-net-intelligence-api
+git submodule update --init
 cd eth-net-intelligence-api
+git checkout master
 npm install
+npm audit fix --force
 ```
 
 ### Create private folder
@@ -208,8 +205,8 @@ If you are successfully connected into `eBlocPOA` network inside `geth` console;
 
 ```bash
 $ cd eBlocPOA
-$ eblocPath="$PWD"
-$ geth --datadir="$eblocPath" account new
+$ ebloc_path="$PWD"
+$ geth --datadir="$ebloc_path" account new
 Your new account is locked with a password. Please give a password. Do not forget this password.
 Passphrase:
 Repeat passphrase:
